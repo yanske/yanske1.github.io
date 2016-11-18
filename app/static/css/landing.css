@@ -1,4 +1,35 @@
 /*
  * CSS file for homepage
  */
+body {
+    background-image:url("/static/img/landing/landing.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+html {
+    height: 100%;
+}
+.absolute{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+}
+.profile{
+    position: absolute;
+    max-height: 100%;
+}
 
+.name {
+    color: #1e2844;
+    font-family: Impact, Charcoal, sans-serif;
+    font-variant: small-caps;
+    font-size: 300%;
+    font-weight: 900;
+    position: relative;
+    left: 550px;
+    top: 100px;
+}
+
+.school{
+}
