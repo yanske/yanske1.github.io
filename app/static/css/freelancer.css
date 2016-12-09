@@ -4,10 +4,17 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+html{
+    height: 100%;
+}
+
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
+
 p {
   font-size: 20px;
 }
@@ -75,7 +82,7 @@ header {
 }
 
 header .container {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 header img {
@@ -95,7 +102,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 150px;
+    padding-top: -px;
     padding-bottom: 0px;
   }
   header .intro-text .name {
