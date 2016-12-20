@@ -5,8 +5,13 @@
 }
 
 .button-wrap {
-  margin-right: 25px;
+  position: static;
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+  margin-top:40px;
 }
+
 .rad-button {
   white-space: nowrap;
   top: 0px;

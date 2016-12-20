@@ -1,4 +1,5 @@
-var height = document.getElementById('about').style.height;
-var width = document.getElementByID('about').style.width;
-document.getElementById("divHeight").innerHTML = 29;
-document.getElementById("divWidth").innerHTML = width;
+var app = angular.module("myApp", []);
+	app.controller("myCtrl", function($scope){
+	$scope.colorHover= "#b7b6b3";
+	$scope.notHover= "#a2a09c";
+});

@@ -59,33 +59,25 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
-    <script>
 
-    </script>
 </head>
 
 <body id="page-top" class="index">
     <!-- Header -->
-
-
      <header>
-
-        <div class="container" style = "height: 100%">
-
-            <div class="row" style="display: flex; flex-direction: row;">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-6">
                     <img class="img-responsive" src="static/img/landing/profile.png" alt="main" align = "bottom">
                 </div>
 
-                <div class="col-lg-6" style = "display:flex;justify-content:center;align-items:center; margin-bottom: 5%; flex-direction: column">
+                <div class="col-lg-6 description">
                         <div class="intro-text">
                             <span class="name">Yan Ke</span>
-                            <span class="skills">Mechatronics Engineering at University of Waterloo</span>
-
+                            <span class="edu">Mechatronics Engineering at University of Waterloo</span>
                         </div>
-                        <div style = "position: static;display:flex;justify-content:center;align-items:center; margin-top:40px ">
-                             <!---media query buttons -->
+                        <div class = "button-wrap">
+                             <!-- fix media query buttons -->
                          		<a href="#about">
                                		<button class = "rad-button danger flat">About</button> 
                                	</a>
@@ -99,25 +91,67 @@
         </div>
     </header>
 
-
-
     <!-- About Section -->
     <section class="success" id="about">
         <div class = "container">
             <div class = "row">
-                <div class ="col-lg-12" style = "background: #CDCCCC; height: 30px; border-top-right-radius: 1em; border-top-left-radius: 1em; display: flex; justify-content: center; align-items: center;">
-                    <div style = "font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; font-size: 1.2em; letter-spacing: 2px;">
-                        <div class = "about-circle" style = "background: #ff5147;"></div>  Yan Ke  &#x2015; About  &#x2015;  20  X  16
-                    </div>
+                <div class = "circle-set">
+                    <div class ="about-circle red"></div>
+                    <div class ="about-circle yellow"></div>
+                    <div class = "about-circle green"></div>
                 </div>
+                <div class ="col-lg-12 about-header" >
+                    Yan Ke  &#x2015; About  &#x2015;  20  X  16
+                    <img class = "about-expandIcon" src = "static/img/arrows.png">
+                </div>
+
             </div>
-            <div class = "row" style= "font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
-                <div class = "col-lg-4 center-text" style="background: #a2a09c; height: 20px"> Home </div>
-                <div class = "col-lg-4 center-text" style="background: #CDCCCC; height: 20px"> About </div>
-                <div class = "col-lg-4 center-text" style= "background: #a2a09c; height: 20px"> Profolio </div>
+            <div class = "row" ng-app = "myApp" ng-controller="myCtrl">
+                <a class = "tabs" href = "#page-top">
+                <div class = "col-lg-4 about-tabs" 
+                ng-mouseover = "hoverActive1=true" 
+                ng-mouseleave = "hoverActive1=false"  
+                ng-style="hoverActive1 ? {'background':colorHover} : {'background':notHover}"> Home </div></a>
+                
+                <div class = "col-lg-4 about-tabs selected"> About </div>
+                
+                <a class = "tabs" href = "#portfolio">
+                <div class = "col-lg-4 about-tabs" 
+                ng-mouseover = "hoverActive2=true" 
+                ng-mouseleave = "hoverActive2=false"  
+                ng-style="hoverActive2 ? {'background':colorHover} : {'background':notHover}"> Portfolio </div></a>
             </div>
             <div class = "row">
-                <div class = "col-lg-12" style = "background: #262626; height: 100px; border-top: none;">
+                <div class = "col-lg-12 about-textSec">
+                    <p class = "tab"><b>></b> Yan.intro() </p>
+                    <div class ="about-text">
+                        Hi! I'm currently a student studying <a class ="uni" target = "_blank" href ="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering">Mechatronics Engineering</a> (just finished 1A!) at the University of Waterloo. From a young age, I've enjoyed mathematics and solving puzzles, and programming and design became a way for me to apply my interests. In the coming years, I hope to experiment with new technology and continuing exploring my passion.  
+                    </div>
+
+                    <p class ="tab"><b>></b> Yan.interests() </p>
+                    <div class = "about-text">
+                        Cooking, Photography, Guitar, Judo, Tea Mixing
+                    </div>
+
+                    <p class ="tab"><b>></b> Yan.github() </p>
+                    <div class = "about-text">
+                        <a class = "uni" target="_blank" href = "https://github.com/yanske1">github.com/yanske1 </a>
+                    </div>
+
+                    <p class ="tab"><b>></b> Yan.linkedIn() </p>
+                    <div class = "about-text">
+                        <a class = "uni" target="_blank" href = "https://linkedin.com/in/yanske1">linkedin.com/in/yanske1 </a>
+                    </div>
+
+                    <p class ="tab"><b>></b> Yan.resume() </p>
+                    <div class = "about-text">
+                        <a class = "uni" target="_blank" href = "static/pdf/Resume.pdf">Resume.pdf </a>
+                    </div>
+
+                    <p class ="tab"><b>></b> Yan.fun_fact() </p>
+                    <div class = "about-text">
+                        My name is an anagram for KanYe.
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,8 +163,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
+                    <h2 style = "color: #032341;">
+                        <span style = "font-stretch: expanded;">~</span>Things I've Worked On~
+                    </h2>
                 </div>
             </div>
             <div class="row">
@@ -480,7 +515,10 @@
 
     <!-- Theme JavaScript -->
     <script src="static/js/freelancer.min.js"></script>
-
+    
+    <!-- AboutSect -->
+    <script src = "static/js/aboutSection.js"></script>
+  
 
 </body>
 
