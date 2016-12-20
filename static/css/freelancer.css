@@ -116,6 +116,19 @@ header .intro-text .skills {
   }
 }
 
+.center-text{
+  text-align: center;
+  vertical-align: middle; 
+}
+
+.about-circle{
+  position: relative;
+  margin: 20px auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+}
+
 section {
   padding: 100px 0;
 }
