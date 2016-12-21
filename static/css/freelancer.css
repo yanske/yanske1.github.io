@@ -281,13 +281,23 @@ span.stretch {
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2%;
   width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
+  height: 100%;
+  vertical-align: middle;
   color: white;
+  font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  font-size: 70px;
+  text-align: right;
+  font-weight: 600;
+  word-spacing: 99999px; /*one word per line*/
+  line-height: 90%;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h6{
+  font-size:50px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
