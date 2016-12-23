@@ -1,15 +1,29 @@
 .button-divider{
-  width: 40px;
-  height:auto;
+  height: 20px;
   display:inline-block;
 }
 
 .button-wrap {
   position: static;
   display:flex;
+  flex-direction: column;
   justify-content:center;
   align-items:center; 
-  margin-top:40px;
+  margin-top:20px;
+}
+
+@media (min-width: 768px) {
+  .button-wrap{
+    flex-direction: row;
+    margin-top: 40px;
+  }
+
+  .button-divider{
+    width: 40px;
+    height:auto;
+    display:inline-block;
+  }
+  
 }
 
 .rad-button {
