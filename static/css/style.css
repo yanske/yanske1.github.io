@@ -1,9 +1,4 @@
 
-/*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 html{
     height: 100%;
 }
@@ -47,39 +42,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-hr.star-light,
-hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 30px;
-}
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-}
-hr.star-light {
-  border-color: white;
-}
-hr.star-light:after {
-  background-color: #18BC9C;
-  color: white;
-}
-hr.star-primary {
-  border-color: #2C3E50;
-}
-hr.star-primary:after {
-  background-color: white;
-  color: #2C3E50;
-}
+
 .img-centered {
   margin: 0 auto;
 }
@@ -185,7 +148,7 @@ header .col-lg-6{
   text-align: center;
   vertical-align: middle;
   background: #a2a09c;
-  height: 20px;
+  height: 0px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: 1px;
 }
@@ -200,7 +163,7 @@ header .col-lg-6{
   flex-direction: row;
   justify-content: center; 
   align-items: center;
-  width: 10%;
+  width: 15%;
   height: 30px;
   z-index: 10;
   padding-left: 10px;
@@ -245,7 +208,6 @@ header .col-lg-6{
 }
 
 .about-text{
-  text-align: justify;
   padding-top: 0%;
   padding-bottom: 4px;
   margin-left: 3.5%;
@@ -254,6 +216,9 @@ header .col-lg-6{
 @media (min-width: 768px) {
   .circle-set{
     width: 90px;
+  }
+  .about-tabs{
+    height: 20px;
   }
 }
 
@@ -338,11 +303,35 @@ span.stretch {
 #portfolio * {
   z-index: 2;
 }
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content .manyWords{
+  font-size : 50px; 
+  line-height: 85%;
+}
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    font-size: 40px;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content .manyWords{
+    font-size : 30px; 
+    line-height: 85%;
+  }
 }
+
+@media (min-width: 992px){
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    font-size: 70px;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content .manyWords{
+    font-size : 50px; 
+    line-height: 85%;
+  }
+}
+
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
