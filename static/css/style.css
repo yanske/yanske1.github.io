@@ -268,7 +268,7 @@ span.stretch {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: #DAA89A;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -538,6 +538,9 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+
+/*project css section*/
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -615,6 +618,7 @@ fieldset[disabled] .btn-success.active {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: white;
+  background: #2C3E50;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -629,15 +633,17 @@ fieldset[disabled] .btn-success.active {
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: #FEDCD2;
-  background: #2C3E50;
+  background: #2C3E50; /*navy blue*/
 }
 .navbar-custom .navbar-nav li.active a {
-  color: #FEDCD2;
+  color: #FEDCD2; /*spicy pink*/
+  background: #2C3E50;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: #FEDCD2;
+  background: #2C3E50;
 }
 .navbar-custom .navbar-toggle {
   color: white;

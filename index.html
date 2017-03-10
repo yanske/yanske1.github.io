@@ -16,7 +16,7 @@
     <!-- Theme CSS -->
     <link href="static/css/style.css" rel="stylesheet">
 
-    <!-- Butotns CSS -->
+    <!-- Buttons CSS -->
     <link href = "static/css/buttons.css" rel = "stylesheet">
 
     <!-- Custom Fonts -->
@@ -56,8 +56,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <!--GreetJS-->
+    <!--GreetJS-->
     <script src = "static/js/textSwapped.js"></script>
+
+    <script src = "static/js/navBarEvents.js"></script>
 
 </head>
 
@@ -74,7 +76,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-app="navApp" ng-controller = "navCtrl">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -86,7 +88,7 @@
                     </li>
                     </li>
                     <li>
-                        <a target="_blank" href = "static/pdf/Resume.pdf">>Resume</a>
+                        <a target="_blank" href = "static/pdf/Resume.pdf" class="ho">Resume</a>
                     </li>
                     <li>
                         <a href="#test">Blog</a>
