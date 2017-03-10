@@ -77,14 +77,29 @@ header .description{
   flex-direction: column;
 }
 
+@font-face {
+    font-family: Glober;
+    src: url("../font/GloberT.otf") format("opentype");
+}
+
 header .intro-text .name {
-  display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'News Cycle', sans-serif;
   font-size: 3em;
   color: #032341;
 }
+
+@font-face {
+    font-family: BoldedG;
+    src: url("../font/GloberB.otf") format("opentype");
+}
+
+header .intro-text .introText{
+  font-family: "BoldedG", sans-serif;
+  font-size: 3em;
+  font-weight: 3em;
+  color: #032341;
+}
+
 header .intro-text .edu {
   padding-top: 20px;
   font-size: 1.4em;
@@ -108,14 +123,6 @@ header .col-lg-6{
   header .container {
     padding-top: -px;
     padding-bottom: 0px;
-  }
-  header .intro-text .name {
-    font-size: 6em;
-  }
-  header .intro-text .edu {
-    padding-top: 0px;
-    font-size: 1.75em;
-    color: #2E2E2E;
   }
 }
 
@@ -590,3 +597,77 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+.navbar-custom {
+  background: #2C3E50;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.navbar-custom .navbar-brand {
+  color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #FEDCD2;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #FEDCD2;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #FEDCD2;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #18BC9C;
+  color: white;
+  border-color: #18BC9C;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 7px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 4px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
