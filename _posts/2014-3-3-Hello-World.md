@@ -10,7 +10,7 @@ After much procrastination, I've finally decided to start a blog! For those that
 In this blog, I'll *probably* post pictures of the food I experiment with, the places I go, or where ever my 2 a.m. brain wanders. 
 
 
-Lets keep in touch!
+Let's keep in touch!
 
 
 Yan
