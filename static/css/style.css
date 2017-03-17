@@ -627,7 +627,7 @@ fieldset[disabled] .btn-success.active {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #FEDCD2;
+  color: #DAA89A;
   background: #2C3E50;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -636,13 +636,13 @@ fieldset[disabled] .btn-success.active {
   background: #2C3E50; /*navy blue*/
 }
 .navbar-custom .navbar-nav li.active a {
-  color: #FEDCD2; /*spicy pink*/
+  color: #DAA89A; /*spicy pink*/
   background: #2C3E50;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color: #FEDCD2;
+  color: #DAA89A;
   background: #2C3E50;
 }
 .navbar-custom .navbar-toggle {

@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +96,7 @@
                         <a target="_blank" href = "static/pdf/Resume.pdf" class="ho">Resume</a>
                     </li>
                     <li>
-                        <a href="#test">Blog</a>
+                        <a href="{{site.url}}/blog/index.html">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -156,7 +161,7 @@
                 <div class = "col-lg-12 about-textSec">
                     <p class = "tab"><b>></b> Yan.intro() </p>
                     <div class ="about-text">
-                        Hi! I'm currently a student studying <a class ="uni" target = "_blank" href ="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering">Mechatronics Engineering</a> (just finished 1A!) at the University of Waterloo. From a young age, I've enjoyed mathematics and solving puzzles, and programming and design became a way for me to apply my interests. In the coming years, I hope to experiment with new technology and continuing exploring my passion.  
+                        Hi! I'm currently a student studying <a class ="uni" target = "_blank" href ="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering">Mechatronics Engineering</a> (almost done 1B!) at the University of Waterloo. From a young age, I've enjoyed mathematics and solving puzzles, and programming and design became a way for me to apply my interests. In the coming years, I hope to experiment with new technology and continuing exploring my passion.  
                     </div>
 
                     <p class ="tab"><b>></b> Yan.interests() </p>
@@ -188,7 +193,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
+  <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -199,6 +204,26 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#easypassword" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                Easy Password
+                            </div>
+                        </div>
+                        <img src="static/img/portfolio/easypassword.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#tttt" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                Trigger Bot
+                            </div>
+                        </div>
+                        <img src="static/img/portfolio/trigger.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#tttt" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -287,6 +312,87 @@
     </div>
 
     <!-- Portfolio Modals -->
+
+    <div class="portfolio-modal modal fade" id="easypassword" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Easy Password </h2>
+                            <br>
+                            <img src="static/img/portfolio/easypassword.png" class="img-responsive img-centered" alt="">
+                            <p>
+                            Recently, I have developed an interest in computer vision and crytopgraphy. To explore my interest, I am currently making a password management app which uses facial recognition to detect the user. 
+
+                            This is an ongoing project, which currently stores user data using crytographic hashes and encrytions implemented using OpenSSL. It is able to detect a face, and I am currently working on progressing this functionality from detection to recognition.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Tools:
+                                    <strong>C++, OpenCV, OpenSSL
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong> Ongoing
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="tttt" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Trigger Bot</h2>
+                            <br>
+                            <img src="static/img/portfolio/trigger.jpg" class="img-responsive img-centered" alt="">
+                            <p>
+                            For McHacks 2017, my team and I made TriggerBot. TriggerBot is a bot that takes in messages from a user, analyzes the sentiment of the message, and responds with an appropriate reply. During the conversation, it has a mood state that varies depending on the messages the user provides, and the messages TriggerBot responds. This mood is the same value for all users talking with TriggerBot, and is updated real-time whenever someone makes a positive/negative comment. TriggerBot also has speech-to-text capabilities, so the user can speak to the bot as an alternative to typing.
+                            </p>
+
+                            The main functionalities of TriggerBot came from several APIs provided at McHacks 2017, including IBM Watson Analytics (speech recognition), Lexalytic's Semantria (sentiment analysis), and Cleverbot API (conversational AI).
+
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Tools:
+                                    <strong>HTML, CSS, Javascript / AngularJS
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong> Jan 2017
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="portfolio-modal modal fade" id="tttt" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
