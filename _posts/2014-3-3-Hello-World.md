@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Red Bean Ice Cream - Hello World!
+title: Hello World!
 date: March 14, 2017
 ---
 
