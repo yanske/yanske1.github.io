@@ -39,3 +39,14 @@ body {
 {
 	font-size: .5em;
 }
+
+.figure-caption
+{
+    display: block;
+    color: grey;
+    font-size: smaller;
+    padding-top: 8px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 5px;
+}
