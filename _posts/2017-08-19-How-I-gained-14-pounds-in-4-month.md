@@ -35,7 +35,7 @@ Every single time their choices to came back to bite them.
 
 Compare to the other developers at my work place, one of the things I lacked was experience. Some of these guys have been coding before I was even born. As a result, I often felt the need to work as much as I can to make up for it, and I was exhausted. 
 
-It wasn't until a long weekend came along and I finally got the rest I needed. The next workday, I found myself energized, and thinking clearly and sharply. 
+It wasn't until a long weekend came along and I finally got the rest I needed. The next workday, I found myself energized, and thinking clearer and sharper.
 
 While it's important to work hard for the results you want, I realized that for me to be more productive, I needed to work smarter, and not just grind out the hours.
 
