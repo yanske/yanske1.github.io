@@ -23,7 +23,7 @@ However with that being said, it is still important to keep the team's best inte
 
 One of the first mistakes I made at Aterica was taking on a series of projects and working on them concurrently. While I spent hours grinding a chunk away from one project and another chunk somewhere else, I really had nothing to show for it. Even worse, on occasions that I ran into roadblocks one project, I simply moved to working on another project. 
 
-Don't get me wrong, it's definately important to be able to multitask. But to truely make progress, its important to drive your projects to completion. Gather the resources you need and break down the roadblocks, and really get your head into a specific project space.
+Don't get me wrong, it's definitely important to be able to multitask. But to truely make progress, its important to drive your projects to completion. Gather the resources you need and break down the roadblocks, and really get your head into a specific project space.
 
 ## It's *NOT* easier to ask for forgiveness than permission
 
