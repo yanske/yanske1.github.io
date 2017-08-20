@@ -15,13 +15,13 @@ For such a small company (software team of 4 people), we definitely had a lot go
 
 ## Don't be afraid to ask
 
-At a start up, there's always things that needs to be done. If you see a project you are interested in, or a new challenge you want to tackle and learn from, don't be afraid to ask for it. The worse that can happen is a "No."
+At a start up, there's always things that need to be done. If you see a project you are interested in, or a new challenge you want to tackle and learn from, don't be afraid to ask for it. The worse that can happen is a "No."
 
 However with that being said, it is still important to keep the team's best interest in sight. Be mindful of what you bring to the table and what you can do to progress not just yourself forward, but your whole team.
 
 ## Push through your projects
 
-One of the first mistakes I made at Aterica was taking on a series of projects and working on them concurrently. While I spent hours grinding a chunk away from one project and another chunk somewhere else, I really had nothing to show for it. Even worse, on occasions that I ran into roadblocks one project, I simply moved to working on another project. 
+One of the first mistakes I made at Aterica was taking on a bunch of projects and working on them concurrently. While I spent hours grinding a chunk away from one project and another chunk somewhere else, I really had nothing to show for it. Even worse, on occasions that I ran into roadblocks one project, I simply moved to working on another project. 
 
 Don't get me wrong, it's definitely important to be able to multitask. But to truely make progress, its important to drive your projects to completion. Gather the resources you need and break down the roadblocks, and really get your head into a specific project space.
 
