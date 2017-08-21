@@ -5,7 +5,7 @@ var app = angular.module("myApp", []);
 });
 
 $(document).ready(function(){
-	setInterval('cursorAnimation()', 600);
+	setInterval('cursorAnimation()', 1000);
 });
 
 function cursorAnimation(){
