@@ -204,88 +204,19 @@ layout: default
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#easypassword" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                Easy Password
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/easypassword.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#tttt" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                Trigger Bot
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/trigger.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#tttt" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                Tron Table Tennis Trainer
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/tttt.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#uwpowerarm" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                UW PowerArm
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/uwbiotron.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#syncedin" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                Synced In
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/syncedin.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#website" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                *this. site
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/website.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#hack4health" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class = "manyWords">
-                                    Don't Sweat The Small Stuff
+                {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+                {% for project in sortedProjects %}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#{{project.tag}}" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    {{project.title}}
                                 </div>
                             </div>
-                        </div>
-                        <img src="static/img/portfolio/hack4health.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#windtunnel" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                APPC Wind Tunnel
-                            </div>
-                        </div>
-                        <img src="static/img/portfolio/windtunnel.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
+                            <img src="{{project.img}}" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -313,314 +244,41 @@ layout: default
 
     <!-- Portfolio Modals -->
 
-    <div class="portfolio-modal modal fade" id="easypassword" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
+    {% for project in site.projects %}
+        <div class="portfolio-modal modal fade" id="{{project.tag}}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Easy Password </h2>
-                            <br>
-                            <img src="static/img/portfolio/easypassword.png" class="img-responsive img-centered" alt="">
-                            <p>
-                            Recently, I have developed an interest in computer vision and crytopgraphy. To explore my interest, I am currently making a password management app which uses facial recognition to detect the user. 
-
-                            This is an ongoing project, which currently stores user data using crytographic hashes and encrytions implemented using OpenSSL. It is able to detect a face, and I am currently working on progressing this functionality from detection to recognition.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>C++, OpenCV, OpenSSL
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> Ongoing
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>{{project.title}}</h2>
+                                <br>
+                                <img src="{{project.img}}" class="img-responsive img-centered" alt="">
+                                    {{project.content}}
+                                <ul class="list-inline item-details">
+                                    <li>Tools:
+                                        <strong>{{project.tools}}
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>{{project.date | date: "%B %Y"}}
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="tttt" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Trigger Bot</h2>
-                            <br>
-                            <img src="static/img/portfolio/trigger.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                            For McHacks 2017, my team and I made TriggerBot. TriggerBot is a bot that takes in messages from a user, analyzes the sentiment of the message, and responds with an appropriate reply. During the conversation, it has a mood state that varies depending on the messages the user provides, and the messages TriggerBot responds. This mood is the same value for all users talking with TriggerBot, and is updated real-time whenever someone makes a positive/negative comment. TriggerBot also has speech-to-text capabilities, so the user can speak to the bot as an alternative to typing.
-                            </p>
-
-                            The main functionalities of TriggerBot came from several APIs provided at McHacks 2017, including IBM Watson Analytics (speech recognition), Lexalytic's Semantria (sentiment analysis), and Cleverbot API (conversational AI).
-
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>HTML, CSS, Javascript / AngularJS
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> Jan 2017
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="portfolio-modal modal fade" id="tttt" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Tron Table Tennis Trainer</h2>
-                            <br>
-                            <img src="static/img/portfolio/tttt.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                                For my 1A mechatronics concept course design project, my group and I decided to build an automatic ping-pong ball shooter. The Tron Table Tennis Trainer (TTTT) is build from 3-D printed gears, an acrylic base, LEGO pieces and Mindstorm sensors, programmed on the NXT using robotC (a C based programming language). 
-                            </p>
-                            <p>
-                                The TTTT is able to load up to 15 balls, and shoot a maximum frequency of approximately 1.5s over a net, at an variety of angles.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>robotC, Solidworks, AutoCAD
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>Dec 2015
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="uwpowerarm" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>UW PowerArm</h2>
-                            <br>
-                            <img src="static/img/portfolio/uwbiotron.png" class="img-responsive img-centered" alt="">
-                            <p>This fall, I joined the student design team, Biomechatronics, and began working on their PowerArm project. Currently, I am working along with other software team members to re-write a biomedical signal processing algorithm using neural networks from Python to C++ without any libaries. </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>Python, C++
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>Ongoing
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="syncedin" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Synced In</h2>
-                            <br>
-                            <img src="static/img/portfolio/syncedin.jpg" class="img-responsive img-centered" alt="">
-                            <p>For Hack the North (my first hackathon!), my team decided to build an app to allow users to "tap into" booths using their smart devices, syncing information, exchanging contacts, etc. It was my first time experimenting with languages and tools used to build this project, but I had a lot of fun learning and apply what I learned.</p>
-
-                            <p>
-                            There are three components to Synced In, an iOS app for the users, iBeacons to identify which booth the user's at, and a web app which allows booth owners to track information, set up sessions, and so on. 
-                            </p>
-
-                            <p>
-                            More can be found on our project's <a target = "_blank" href = "https://devpost.com/software/synchin/">devpost.</a>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>Swift, iBeacons, AngularJS, Firebase
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>September 2016
-                                    </strong>
-                                </li>
-
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="website" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Personal Website</h2>
-                            <br>
-                            <img src="static/img/portfolio/website.png" class="img-responsive img-centered" alt="">
-                            <p>While I was learning python in the summer of 2016, I decided to experiment with Flask to create my personal website. I eventually realized that having an admin interface and database isn't the most pratical for a personal website, and removed it, but continued to develop the site whenever I had spare time.</p>
-
-                            <p>
-                            I've recently added a personal <a href = "{{site.url}}/blog/">blog</a> which is powered by Jekyll, check me out!
-
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>AngularJS, HTML/CSS, Bootstrap, Jekyll
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>December 2016
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="hack4health" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Don't Sweat the Small Stuff</h2>
-                            <br>
-                            <img src="static/img/portfolio/hack4health.png" class="img-responsive img-centered" alt="">
-                            <p>For Hack4Health, a hackathon dedicated to increasing the quality of life for individuals living with MS or dementia, my teammate and I decided to make an app to help individuals living with MS organze their daily taskes, based on their energy level and the importances of each task.</p>
-                            <p>
-                            After coming up with the idea, my teammate began working on the mock-up while I worked on the Android app. Being my first time working with Android, I initially ran into many bugs and deadends, but eventually in an afternoon, I was able to set up the main pages, prompting for an user's energy level, making a task list(stored on Firebase), and recommending whether a user should tackle a task based on their energy level.
-
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>Java, Firebase
-                                    </strong>
-                                </li>
-                                <li>
-                                    <strong>Date: November, 2016
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="windtunnel" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>APPC Wind Tunnel</h2>
-                            <br>
-                            <img src="static/img/portfolio/windtunnel.jpg" class="img-responsive img-centered" alt="">
-                            <p>For my AP Physics C final project, my lab group was tasked with building a wind tunnel capable of detecting 3-D aerodynamic forces on an airfoil.</p>
-
-                            <img src= "static/img/portfolio/wtgui.png" class = "img-responsive img-centered">
-                            <i>GUI displaying aerodynamic forces and other relevant data</i>
-                            <br>
-                            <br>
-                            <p>
-                            The full prospectus with sensor outlines, circuits, and dimensions can be found <a target="_blank" href="static/pdf/prospectus.pdf">here</a>.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Tools:
-                                    <strong>Arduino, Matlab, AutoCAD, soldering
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>December 2015
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 
     <!-- jQuery -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
@@ -638,9 +296,6 @@ layout: default
     
     <!-- AboutSect -->
     <script src = "static/js/aboutSection.js"></script>
-
-
-  
 
 </body>
 </html>
