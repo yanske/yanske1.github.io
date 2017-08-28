@@ -2,7 +2,7 @@
 layout: project
 title: Easy Password
 tools: C++, OpenCV, OpenSSL
-date: 2017-08-25
+date: 2017-07-01
 tag: easypassword
 img: static/img/portfolio/easypassword.png
 ---
