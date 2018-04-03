@@ -3,8 +3,11 @@ layout: project
 title: Spoilers Suck!
 tools: Python, Flask, Heroku
 date: 2017-08-01
-tag: soilerssuck
-img: static/img/portfolio/spoilerssuck.jpg
+raw: soilerssuck
+dp: spoilerssuck.jpg
+img: spoilerssuck.jpg
+tags: Web
+github: https://github.com/yanske1/SpoilersSuck
 ---
 
 Winter is coming? More like spoilers are coming. And on the Internet, they're EVERYWHERE. Thats why my friends and I made a Chrome extension for Hack the 6ix to address this problem.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="container">
+      <div class="template wrapper">
+        <div class="template-title">
+          {{ page.title }}
+        </div>
+        <div class="template-img-grid">
+          {% assign img_srcs = page.img | split: ' ' %}
+          {% for img in img_srcs %}
+            <img src="{{ site.baseurl }}/assets/img/work/{{ img }}">
+          {% endfor %}
+        </div>
+        {{ content }}
+        <div class="template-notes">
+          {% if page.github %}
+            Github: <b><a href="{{ page.github }}" target="_blank">{{ page.github }}</a></b>
+            <br />
+          {% endif %}
+          Made with ❤️ and: <b>{{ page.tools }}</b>
+        </div>
+        <br />
+        <div class="template-nav">
+          {% if page.next.url %}
+            <a href="{{ page.next.url }}">&laquo; {{ page.next.title }}</a>
+          {% endif %}
+          {% if page.previous.url %}
+            <a class="next" href="{{ page.previous.url }}">{{ page.previous.title }} &raquo;</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

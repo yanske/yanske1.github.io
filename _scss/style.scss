@@ -1,0 +1,44 @@
+// Colours
+$kind-of-grey: #F1F3F4;
+$relaxed-grey: #979292;
+$soft-grey: #7c7a7a;
+$bit-more-grey: #444444;
+$raven-grey: #2a2e30;
+$border-color: rgba(black, .3);
+$blue: #107896;
+$pink: rgba(252, 77, 77, .5);
+
+// Spacings
+$body-side-padding: 30px !default;
+$body-width: 1000px !default;
+$header-height: 50px;
+$nav-icon-height: 20px;
+
+$cancel-icon-height: 40px;
+$cancel-icon-spacing: 30px;
+
+$small-screen-break: 600px;
+$large-screen-break: 800px;
+
+$dp-dimension: 42%;
+$social-icon-dimensions: 40px;
+
+// Typesettings
+$default-font: 'Quicksand', sans-serif;
+$bold-weight: 500;
+$heading-size: 1.4em;
+$subheading-size: 1.3em;
+$title-size: 1em;
+$tag-size: .85em;
+
+@mixin media-query($break) {
+  @media screen and (max-width: $break) {
+    @content;
+  }
+}
+
+@import "partials/base.scss",
+  "partials/home.scss",
+  "partials/work.scss",
+  "partials/note.scss",
+  "partials/template.scss";

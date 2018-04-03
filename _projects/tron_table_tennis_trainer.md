@@ -3,8 +3,11 @@ layout: project
 title: Tron Table Tennis Trainer
 tools: C, AutoCAD, Solidworks
 date: 2016-12-01
-tag: tttt
-img: static/img/portfolio/tttt.jpg
+raw: tttt
+dp: tttt.jpg
+img: tttt.jpg
+tags: Hardware
+github: https://github.com/yanske1/MTE100Project
 ---
 
 For my 1A mechatronics concept course design project, my group and I decided to build an automatic ping-pong ball shooter. The Tron Table Tennis Trainer (TTTT) is build from 3-D printed gears, an acrylic base, LEGO pieces and Mindstorm sensors, programmed on the NXT using robotC (a C based programming language). 

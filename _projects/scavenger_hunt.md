@@ -3,8 +3,11 @@ layout: project
 title: Scavenger Hunt
 tools: Android, Python, Flask, Heroku, HTML, CSS, React, Redux
 date: 2017-08-02
-tag: scavengerhunt
-img: static/img/portfolio/scavenger.jpg
+raw: scavengerhunt
+dp: scavenger.jpg
+img: scavenger.jpg
+tags: Web Mobile Design
+github: https://github.com/yanske1/ScavengerHunt
 ---
 
 Over the summer, my friend and I made Scavenger Hunt, a web / mobile app to help host large scale scavenger hunt games.

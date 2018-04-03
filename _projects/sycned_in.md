@@ -3,8 +3,10 @@ layout: project
 title: Synced In
 tools: AngularJS, Firebase, iBeacons
 date: 2016-09-01
-tag: syncedin
-img: static/img/portfolio/syncedin.jpg
+raw: syncedin
+dp: syncedin.jpg
+img: syncedin.jpg
+tags: Web Mobile Design
 ---
 
 For Hack the North (my first hackathon!), my team decided to build an app to allow users to "tap into" booths using their smart devices, syncing information, exchanging contacts, etc. It was my first time experimenting with languages and tools used to build this project, but I had a lot of fun learning and apply what I learned.

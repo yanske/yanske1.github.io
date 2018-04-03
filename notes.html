@@ -1,0 +1,16 @@
+---
+layout: default
+title: notes
+navigation_weight: 1
+---
+
+<div class="notes wrapper">
+  {% for post in site.posts %}
+  <div class="timeline-item" date-is={{ post.date | date: "%Y-%m-%d" }}>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+      {{ post.title }}
+    </a>
+    {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
+  </div>
+  {% endfor %}
+</div>
