@@ -81,6 +81,7 @@ nav {
       display: block;
       background: none;
       border: none;
+      cursor: pointer;
     }
 
     .menu-icon {
@@ -126,6 +127,11 @@ nav {
       padding-bottom: 3px;
       padding-top: 3px;
       border-bottom: 1px solid #e8e8e8;
+
+      a {
+        display: block;
+        width: 100%;
+      }
     }
 
     li:first-child {
@@ -136,10 +142,6 @@ nav {
       border: none;
     }
   }
-}
-
-object {
-  pointer-events: none;
 }
 
 .container {
