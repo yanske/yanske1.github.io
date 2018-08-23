@@ -4,21 +4,12 @@
       <a href="/">yanke.</a>
     </div>
     <nav>
-      <input type="checkbox" id="dropdown-trigger" class="dropdown-trigger" />
-      <label for="dropdown-trigger">
-        <object class="menu-icon" type="image/svg+xml" data="{{ site.baseurl }}/assets/img/menu.svg">
-          Menu
-        </object>
-      </label>
+      <button class="dropdown-trigger">
+        <img class="menu-icon" src="{{ site.baseurl }}/assets/img/menu.svg">
+      </button>
 
       <div class="dropdown"> 
-        <label for="dropdown-trigger">
-          <object class="cancel-icon" type="image/svg+xml" data="{{ site.baseurl }}/assets/img/cancel.svg">
-            Cancel
-          </object>
-        </label>
         <ul>
-          <li class="home"><a href="/" {% if page.url == "/" %} class="active"{% endif %}>home</a></li>
           {% assign nav_pages = site.html_pages | sort: 'navigation_weight' %}
           {% for p in nav_pages %}
             {% if p.navigation_weight %}
@@ -33,5 +24,20 @@
         </ul>
       </div>
     </nav>
+  </div>
+  <div class="mobile-dropdown">
+    <ul>
+      {% assign nav_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for p in nav_pages %}
+        {% if p.navigation_weight %}
+        <li>
+          <a href="{{ p.url }}" {% if p.url == page.url %} class="active"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      <li><a href="{{ site.baseurl }}/assets/Yan_Resume.pdf" target="_blank">résumé</a></li>
+    </ul>
   </div>
 </header>

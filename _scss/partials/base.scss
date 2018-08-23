@@ -10,6 +10,10 @@ body {
   font-family: $default-font;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
 .wrapper {
   margin-top: $header-height + 30px;
 }
@@ -60,14 +64,6 @@ nav {
   .menu-icon {
     display: none;
   }
-  
-  .cancel-icon {
-    display: none;
-  }
-
-  .home {
-    display: none;
-  }
 
   li {
     display: inline;
@@ -81,12 +77,10 @@ nav {
     background-color: #fdfdfd;
     text-align: right;
 
-    label[for="dropdown-trigger"] {
+    .dropdown-trigger {
       display: block;
-      width: $nav-icon-height;
-      height: $nav-icon-height;
-      z-index: 2;
-      cursor: pointer;
+      background: none;
+      border: none;
     }
 
     .menu-icon {
@@ -95,52 +89,51 @@ nav {
       height: $nav-icon-height;
     }
 
-    input ~ .dropdown {
+    .dropdown {
       display: none;
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
     }
 
-    input:checked ~ .dropdown {
+    li {
       display: block;
-      background-color: white;
-      position: fixed;
-      height: 100%;
-      width: 100%;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      top: 0;
-      left: 0;
-      z-index: 10;
+    }
+  }
+}
+
+.mobile-dropdown {
+  clear: both;
+  display: none;
+  background: white;
+  width: 100vw;
+  border-bottom: 1px solid #e8e8e8;
+
+  @include media-query($small-screen-break) {
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    display: block;
+    height: 0;
+    overflow: hidden;
+
+    ul {
+      padding-left: $body-side-padding / 2;
+      padding-right: $body-side-padding + 4px; // Offset due to menu icon
+      margin: 0;
+    }
+
+    li {
+      list-style-type: none;
       text-align: center;
+      padding-bottom: 3px;
+      padding-top: 3px;
+      border-bottom: 1px solid #e8e8e8;
+    }
 
-      ul {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        padding-bottom: 30px;
-      }
+    li:first-child {
+      border-top: 1px solid #e8e8e8;
+    }
 
-      li {
-        display: block;
-        padding-bottom: 20px;
-        font-size: 2em;
-      }
-
-      label[for="dropdown-trigger"]{
-        position: fixed;
-        top: $cancel-icon-spacing;
-        right: $cancel-icon-spacing;
-        width: $cancel-icon-height;
-        height: $cancel-icon-height;
-        z-index: 200;
-
-        .cancel-icon {
-          height: $cancel-icon-height;
-          display: block;
-        }
-      }
+    li:last-child {
+      border: none;
     }
   }
 }
