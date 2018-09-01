@@ -11,32 +11,6 @@
   }
 }
 
-.tag-selector {
-  margin-top: 10px;
-  list-style-type: none;
-  font-size: $tag-size;
-
-  li {
-    letter-spacing: 0.08em;
-    display: inline-block;
-    color: $pink;
-    border: 2px solid $pink;
-    text-transform: uppercase;
-    padding: .2em .5em;
-    margin: .2em .2em;
-
-    &:hover {
-      color: white;
-      background-color: $pink;
-    }
-  }
-
-  .active {
-    color: white;
-    background-color: $pink;
-  }
-}
-
 .project-container {
   margin-top: 30px;
   margin-bottom: 30px;
