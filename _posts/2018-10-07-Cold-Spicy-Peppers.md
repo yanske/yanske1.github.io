@@ -4,12 +4,11 @@ title: "Cooking with the Yan: Cold Spicy Peppers"
 date: October 07, 2018
 ---
 
+I'm a big fan of cold side dishes, and one of my favourites are the cold spicy peppers that my Grandmother makes for our family reunions. After finally obtaining the recipe, I'm excited to break down what goes into these spicy boys.
+
 <figure>
   <img src="{{ site.url }}/assets/img/notes/p5.jpg">
 </figure>
-
-
-I'm a big fan of cold side dishes, and one of my favourites are the cold spicy peppers that my Grandmother makes for our family reunions. After finally obtaining the recipe, I'm excited to break down what goes into these spicy boys.
 
 For this cold dish, we'll need the following:
 - Anaheim Pepper (Also know as Long Broad Pepper)
