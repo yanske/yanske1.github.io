@@ -13,7 +13,7 @@ navigation_weight: 0
     {% for project in projects %}
       <div class="project">
         <a href="{{ project.url | relative_url }}">
-          <img src="{{ site.baseurl }}/assets/img/work/{{ project.dp }}">
+          <img src="{{ site.baseurl }}/assets/img/work/{{ project.dp }}" alt="{{ project.title }}">
         </a>
         <a href="{{ project.url | relative_url }}">
           <div class="title">{{ project.title }}</div>

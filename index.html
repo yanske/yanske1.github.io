@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home-wrapper">
-  <img src="{{ site.baseurl }}/assets/img/dp.png" class="dp">
+  <img src="{{ site.baseurl }}/assets/img/dp.png" alt="me" class="dp">
   <div class="description">
     <div class="intro">
       Hi, I'm Yan!
@@ -15,7 +15,7 @@ layout: default
     <div class="contacts">
       {% for social in site.data.contacts %}
         <a href="{{ social.link }}" target="_blank">
-          <img class="social" src="{{ site.baseurl }}/assets/img/{{ social.name }}.svg"/>
+          <img class="social" src="{{ site.baseurl }}/assets/img/{{ social.name }}.svg" alt="{{ social.name }}"/>
           <span>
             {{ social.link }}
           </span>

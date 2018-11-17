@@ -6,10 +6,7 @@ date: August 19, 2017
 
 At Waterloo, it always amazes me how fast a term can breeze by, and this summer was no different. Despite all the wetness this summer brought, I had a great time at my first internship at Aterica Digital Health, where I mostly worked on our Android application. (Shipping Soon<small><sup>TM</sup></small>)
 
-<figure>
-	<img src="{{ site.url }}/assets/img/notes/coop1.jpg" alt="Cake day">
-	<figcaption>A typical friday... After the BBQ :)</figcaption>
-</figure>
+{% include figure.html link="notes/coop1.jpg" alt="Cake day" caption="A typical friday... After the BBQ :)" %}
 
 For such a small company (software team of 4 people), we definitely had a lot going on. I learned not only about various technologies and the software development process, but also "life lessons". Here's a few.
 
@@ -38,6 +35,3 @@ Compared to the other developers at my work place, one of the things I lacked wa
 It wasn't until a long weekend came along and I finally got the rest I needed. The next workday, I found myself energized, and thinking clearer and sharper.
 
 While it's important to work hard for the results you want, I realized that for me to be more productive, I needed to work smarter, and not just grind out the hours.
-
-
-
