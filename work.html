@@ -12,10 +12,10 @@ navigation_weight: 0
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects %}
       <div class="project">
-        <a href="{{ site.baseurl }}/projects/{{ project.slug }}">
+        <a href="{{ project.url | relative_url }}">
           <img src="{{ site.baseurl }}/assets/img/work/{{ project.dp }}">
         </a>
-        <a href="{{ site.baseurl }}/projects/{{ project.slug }}">
+        <a href="{{ project.url | relative_url }}">
           <div class="title">{{ project.title }}</div>
         </a>
         {% assign tags = project.tags %}
