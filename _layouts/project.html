@@ -11,7 +11,7 @@
         <div class="template-img-grid">
           {% assign img_srcs = page.img | split: ' ' %}
           {% for img in img_srcs %}
-            <img src="{{ site.baseurl }}/assets/img/work/{{ img }}">
+            <img src="{{ site.baseurl }}/assets/img/work/{{ img }}" alt="{{ img }}">
           {% endfor %}
         </div>
         {{ content }}
