@@ -9,6 +9,13 @@ logo: /assets/img/dp.png
 author: yan
 google_site_verification: 3qoNBH9p7R2jfzU-xH2aNq0fLwm6lXVyJgMw-_Wu6OY
 
+social:
+  name: Yan Ke
+  links:
+    - https://github.com/yanske1
+    - https://www.facebook.com/yansongke
+    - https://www.linkedin.com/in/yanske1/
+
 # --- Jekyll SEO ---
 
 baseurl: ""
@@ -16,6 +23,7 @@ baseurl: ""
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 sass:
   sass_dir: _scss
