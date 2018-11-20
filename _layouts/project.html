@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body onload="setMenuToggle()">
+  <body>
     {% include header.html %}
     <div class="container">
       <div class="template wrapper">
@@ -17,7 +17,7 @@
         {{ content }}
         <div class="template-notes">
           {% if page.github %}
-            Github: <b><a href="{{ page.github }}" target="_blank">{{ page.github }}</a></b>
+            Github: <b><a href="{{ page.github }}" target="_blank" rel="noopener">{{ page.github }}</a></b>
             <br />
           {% endif %}
           Made with ❤️ and: <b>{{ page.tools }}</b>

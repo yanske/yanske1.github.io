@@ -5,16 +5,16 @@ layout: default
 <div class="home-wrapper">
   <img src="{{ site.baseurl }}/assets/img/dp.png" alt="me" class="dp">
   <div class="description">
-    <div class="intro">
+    <h1 class="intro">
       Hi, I'm Yan!
-    </div>
+    </h1>
     <div class="bio">
-      Computer Science / Statistics student at <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. 
-      Software Engineering Intern at <a href="https://www.scribd.com/" target="_blank">Scribd</a>. Previously at <a href="https://www.shopify.ca" target="_blank">Shopify</a> and <a href="https://www.aterica.com/" target="_blank">Aterica</a>.
+      Computer Science / Statistics student at <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>. 
+      Software Engineering Intern at <a href="https://www.scribd.com/" target="_blank" rel="noopener">Scribd</a>. Previously at <a href="https://www.shopify.ca" target="_blank" rel="noopener">Shopify</a> and <a href="https://www.aterica.com/" target="_blank" rel="noopener">Aterica</a>.
     </div>
     <div class="contacts">
       {% for social in site.data.contacts %}
-        <a href="{{ social.link }}" target="_blank">
+        <a href="{{ social.link }}" target="_blank" rel="noopener">
           <img class="social" src="{{ site.baseurl }}/assets/img/{{ social.name }}.svg" alt="{{ social.name }}"/>
           <span>
             {{ social.link }}

@@ -13,4 +13,4 @@ For Hack the North (my first hackathon!), my team decided to build an app to all
 
 There are three components to Synced In, an iOS app for the users, iBeacons to identify which booth the user's at, and a web app which allows booth owners to track information, set up sessions, and so on. 
 
-More can be found on our project's <a target = "_blank" href = "https://devpost.com/software/synchin/">devpost.</a>
+More can be found on our project's <a target = "_blank" href = "https://devpost.com/software/synchin/" rel="noopener">devpost.</a>
