@@ -1,10 +1,17 @@
-title: Yan Ke Personal Website
+# --- Jekyll SEO ---
+title: Yan Ke
 description: >-
-  Yan Ke UW University of Waterloo CS Software Engineering Student Intern Personal
-  Website Blog Projects Work
+  Hi! I'm Yan Ke and I am currently a student at the University of Waterloo studying Computer Science. Check out what I'm up to on my blog or what I'm working on. :)
+
+url: https://itsyan.me
+logo: /assets/img/dp.png
+
+author: yan
+google_site_verification: 3qoNBH9p7R2jfzU-xH2aNq0fLwm6lXVyJgMw-_Wu6OY
+
+# --- Jekyll SEO ---
 
 baseurl: ""
-url: ""
 
 markdown: kramdown
 plugins:
