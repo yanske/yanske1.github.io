@@ -18,18 +18,18 @@ For this cold dish, we'll need the following:
 
 1. Start off by cutting open the peppers and removing the seeds. Cut them into 2 inch long portions, and wash thoroughly. Be sure to use gloves when coming into contact with the peppers!
 
-  {% include figure.html link="notes/p1.jpg" alt="Cutting the Peppers" %}
+    {% include figure.html link="notes/p1.jpg" alt="Cutting the Peppers" %}
 
 2. Now we'll begin braising the peppers in oil. Heat up some vegetable oil in a frying pan and put the peppers in on medium heat. Close the lid on the pan but stir often.
 
-  {% include figure.html link="notes/p2.jpg" alt="Braising in Oil" %}
+    {% include figure.html link="notes/p2.jpg" alt="Braising in Oil" %}
 
 3. Once the peppers begin goldening, now it's time to add our seasoning. Add dark and light soy sauce in 1:1 proportion, and brown sugar to the mix until the peppers have an adequate sweet and sour aftertaste to them.
 
-  {% include figure.html link="notes/p4.jpg" alt="Seasoning" %}
+    {% include figure.html link="notes/p4.jpg" alt="Seasoning" %}
 
 4. Now continue braising until the peppers become soft and limp. The best way to determine when the pepper is ready by tasting it: it should be good when it no longer feels fibrous.
 
-  {% include figure.html link="notes/p3.jpg" alt="Ready" %}
+    {% include figure.html link="notes/p3.jpg" alt="Ready" %}
 
 5. Refridge until cold, and it'll be good to serve for up to a week!

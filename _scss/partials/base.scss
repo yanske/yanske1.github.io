@@ -10,6 +10,10 @@ body {
   font-family: $default-font;
 }
 
+h2 {
+  margin: 0;
+}
+
 button::-moz-focus-inner {
   border: 0;
 }

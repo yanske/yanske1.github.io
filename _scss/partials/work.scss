@@ -8,6 +8,16 @@
     padding-left: 10px;
     font-size: $heading-size;
     font-weight: $bold-weight;
+
+    a {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-decoration-color: $bit-more-grey;
+  
+      &:hover {
+        filter: brightness(250%);
+      }
+    }
   }
 }
 
