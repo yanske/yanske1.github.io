@@ -16,6 +16,10 @@
       margin-left: 0; 
     }
   }
+
+  a {
+    color: $blue;
+  }
 }
 
 .template-title {
@@ -32,10 +36,6 @@
 }
 
 .template-nav {
-  a {
-    color: $blue;
-  }
-
   .next {
     float: right;
   }

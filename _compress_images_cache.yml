@@ -31,3 +31,6 @@ assets/img/cancel.svg: cancel.svg
 assets/img/github.svg: github.svg
 assets/img/menu.svg: menu.svg
 assets/img/linkedin.svg: linkedin.svg
+assets/img/notes/metric.png: metric.png
+assets/img/notes/lighthouse.png: lighthouse.png
+assets/img/notes/surprised.png: surprised.png
