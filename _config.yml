@@ -1,5 +1,5 @@
 baseurl: ""
-exclude: ['node_modules', 'webpack', 'webpack.config.js', 'package.json']
+exclude: ['node_modules', 'webpack', 'webpack.config.js', 'package.json', 'vendor']
 
 markdown: kramdown
 plugins:
