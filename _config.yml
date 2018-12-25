@@ -1,24 +1,5 @@
-# --- Jekyll SEO ---
-title: Yan Ke
-description: >-
-  Hi! I'm Yan Ke and I am currently a student at the University of Waterloo studying Computer Science. Check out what I'm up to on my blog or what I'm working on. :)
-
-url: https://itsyan.me
-logo: /assets/img/dp.png
-
-author: yan
-google_site_verification: 3qoNBH9p7R2jfzU-xH2aNq0fLwm6lXVyJgMw-_Wu6OY
-
-social:
-  name: Yan Ke
-  links:
-    - https://github.com/yanske1
-    - https://www.facebook.com/yansongke
-    - https://www.linkedin.com/in/yanske1/
-
-# End Jekyll SEO ---
-
 baseurl: ""
+exclude: ['node_modules', 'webpack', 'webpack.config.js', 'package.json']
 
 markdown: kramdown
 plugins:
@@ -36,3 +17,21 @@ sass:
 collections:
   projects:
     output: true
+
+# --- Jekyll SEO ---
+title: Yan Ke
+description: >-
+  Hi! I'm Yan Ke and I am currently a student at the University of Waterloo studying Computer Science. Check out what I'm up to on my blog or what I'm working on. :)
+
+url: https://itsyan.me
+logo: /assets/img/dp.png
+
+author: yan
+google_site_verification: 3qoNBH9p7R2jfzU-xH2aNq0fLwm6lXVyJgMw-_Wu6OY
+
+social:
+  name: Yan Ke
+  links:
+    - https://github.com/yanske1
+    - https://www.facebook.com/yansongke
+    - https://www.linkedin.com/in/yanske1/

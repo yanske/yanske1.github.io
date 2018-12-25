@@ -18,6 +18,7 @@ addons:
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
+# Don't need to cache node_modules since not used in build
 cache: bundler
 
 notifications:
