@@ -26,5 +26,8 @@
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "swup": "^1.7.17"
   }
 }
