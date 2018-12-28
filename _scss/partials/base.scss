@@ -45,7 +45,7 @@ a {
 nav {
   padding-top: 2em;
   width: 92%;
-  height: 50px;
+  height: 40px;
   border-bottom: 1px solid $soft-grey;
   margin:  0 auto 0 auto;
 
@@ -74,9 +74,10 @@ nav {
   }
 
   ul {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
-    margin-block-start: 10px;
+    height: 40px;
+    //margin-block-start: 10px;
   }
 }
 
