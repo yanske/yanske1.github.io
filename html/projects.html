@@ -1,7 +1,6 @@
 ---
 layout: default
 title: projects
-navigation_weight: 0
 permalink: projects.html
 ---
 
@@ -16,12 +15,6 @@ permalink: projects.html
         <a href="{{ project.url | relative_url }}">
           <div class="title">{{ project.title }}</div>
         </a>
-        {% assign tags = project.tags %}
-        <div class="tag-container">
-          {% for tag in tags %}
-          <div class="hidden-tag">{{ tag }}</div>
-          {% endfor %}
-        </div>
       </div>
     {% endfor %}
   </div>

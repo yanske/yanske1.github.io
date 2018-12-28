@@ -1,6 +1,6 @@
 .notes {
-	padding-left: 2.3em;
-	padding-right: 2.3em;
+	padding-left: $wrapper-text-padding;
+	padding-right: $wrapper-text-padding;
 }
 
 .timeline-item {
@@ -18,5 +18,5 @@
 }
 
 .post-date {
-  color: #737373;
+  color: $soft-grey-text;
 }

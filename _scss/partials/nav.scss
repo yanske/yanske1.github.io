@@ -1,0 +1,35 @@
+nav {
+  padding-top: 2em;
+  width: 92%;
+  height: $nav-height;
+  border-bottom: 1px solid $soft-grey;
+  margin:  0 auto 0 auto;
+
+  a {
+    color: $soft-grey-text;
+    &:hover {
+      text-decoration: none;
+      color: $raven-grey
+    }
+  }
+
+  .active {
+    border-bottom: 1px solid $raven-grey;
+    a {
+      color: $raven-grey;
+    } 
+  }
+
+  li {
+    height: $tab-height;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding-bottom: $nav-height - $tab-height;
+  }
+
+  ul {
+    margin: 0 0 0 0;
+    padding: 0;
+    height: $nav-height;
+  }
+}

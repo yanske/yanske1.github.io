@@ -1,24 +1,18 @@
 // Colours
-$kind-of-grey: #F1F3F4;
-$relaxed-grey: #979292;
 $soft-grey: #CCCCCC;
+$soft-grey-text: #737373;
 $bit-more-grey: #444444;
 $raven-grey: #2a2e30;
-$border-color: rgba(black, .3);
 $blue: #107896;
-$pink: rgba(252, 77, 77, .5);
 
 // Spacings
 $body-side-padding: 30px !default;
 $body-width: 1000px !default;
-$header-height: 50px;
-$nav-icon-height: 20px;
 
-$cancel-icon-height: 40px;
-$cancel-icon-spacing: 30px;
+$wrapper-text-padding: 2.3em;
 
-$small-screen-break: 600px;
-$large-screen-break: 800px;
+$nav-height: 40px;
+$tab-height: 26px;
 
 $dp-dimension: 140px;
 $social-icon-dimensions: 20px;
@@ -29,7 +23,10 @@ $bold-weight: 500;
 $heading-size: 1.4em;
 $subheading-size: 1.3em;
 $title-size: 1em;
-$tag-size: .85em;
+
+// Media Query & Page Break Setups
+$small-screen-break: 600px;
+$large-screen-break: 800px;
 
 @mixin media-query($break) {
   @media screen and (max-width: $break) {
@@ -37,8 +34,11 @@ $tag-size: .85em;
   }
 }
 
-@import "partials/base.scss",
-  "partials/home.scss",
-  "partials/work.scss",
-  "partials/note.scss",
-  "partials/template.scss";
+// Partial Imports
+@import "partials/base.scss";
+@import "partials/header.scss";
+@import "partials/nav.scss";
+@import "partials/home.scss";
+@import "partials/work.scss";
+@import "partials/note.scss";
+@import "partials/template.scss";

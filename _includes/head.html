@@ -1,10 +1,13 @@
-<title>
-    Yan Ke {% if page.title %}|{% endif %} {{ page.title | capitalize}}
-</title>
-<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{% seo title=false %}
-{% include favicons.html %}
-
-<!-- 2 space, and add if condition to add bundle.js if in nav loop -->
+<head>
+  <title>
+      Yan Ke {% if page.title %}|{% endif %} {{ page.title | capitalize}}
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  {% if include.js %}
+    <script type="text/javascript" defer="" src="/assets/js/bundle.js"></script>
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo title=false %}
+  {% include favicons.html %}
+</head>
