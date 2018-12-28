@@ -6,11 +6,6 @@ permalink: projects.html
 ---
 
 <div class="work wrapper">
-  <div class="title">
-    <h2>Projects</h2>
-
-    Check out what I've been working on, or see more on <a href="https://github.com/yanske1" target="_blank" rel="noopener">Github</a>
-  </div>
   <div class="project-container">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects %}

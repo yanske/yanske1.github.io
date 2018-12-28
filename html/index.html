@@ -3,25 +3,18 @@ layout: default
 permalink: index.html
 ---
 
-<div class="home-wrapper">
-  <img src="{{ site.baseurl }}/assets/img/dp.png" alt="me" class="dp">
-  <div class="description">
-    <h1 class="intro">
-      Hi, I'm Yan!
-    </h1>
-    <div class="bio">
-      Computer Science / Statistics student at <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>. 
-      Software Engineering Intern at <a href="https://www.scribd.com/" target="_blank" rel="noopener">Scribd</a>. Previously at <a href="https://www.shopify.ca" target="_blank" rel="noopener">Shopify</a> and <a href="https://www.aterica.com/" target="_blank" rel="noopener">Aterica</a>.
-    </div>
-    <div class="contacts">
-      {% for social in site.data.contacts %}
-        <a href="{{ social.link }}" target="_blank" rel="noopener">
-          <img class="social" src="{{ site.baseurl }}/assets/img/{{ social.name }}.svg" alt="{{ social.name }}"/>
-          <span>
-            {{ social.link }}
-          </span>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
+<div class="home wrapper">
+  <h3>👋 Hi, I'm Yan!</h3>
+  <p>
+    I'm a 3rd-year (3A) Computer Science / Statistics student at the <a class="ext" href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>, currently working as a undergraduate research assistant at the <a class="ext" href="http://hci.cs.uwaterloo.ca/" target="_blank" rel="noopener">Human Computer Interactions Lab</a> in Waterloo.
+  </p>
+  <p>
+    I previously interned as a software engineer 💻 at <a class="ext" href="https://www.scribd.com/" target="_blank" rel="noopener">Scribd</a>, <a class="ext" href="https://www.shopify.ca" target="_blank" rel="noopener">Shopify</a>, <a class="ext" href="https://www.aterica.com/" target="_blank" rel="noopener">Aterica</a>, working on backend systems. Throughout my internships, I also learned how to process data at scale and make data-driven product decisions. Check out more of what I've done on my <a class="ext" href="{{ site.baseurl }}/assets/Yan_Resume.pdf" target="_blank">résumé</a>!
+  </p>
+  <p>
+    During my free time, I enjoy catching up on my favourite dramas 📺, playing badminton 🏸, listening to an audiobook 🎧, or enjoying a cup of coffee or tea ☕.
+  </p>
+  <p>
+    Currently looking for summer 2019 internship opportunities!
+  </p>
 </div>

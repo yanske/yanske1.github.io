@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    <script type="text/javascript" defer="" src="/assets/js/bundle.js"></script>
+  </head>
   <body>
-    {% include header.html %}
     <div class="container">
-      {{ content }}
+      {% include header.html %}
+      {% include nav.html %}
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
   </body>
 </html>

@@ -7,10 +7,12 @@ permalink: blog.html
 
 <div class="notes wrapper">
   {% for post in site.posts %}
-  <div class="timeline-item" date-is={{ post.date | date: "%Y-%m-%d" }}>
+  <div class="timeline-item">
     <a class="post-link" href="{{ post.url | relative_url }}">
       {{ post.title }}
     </a>
+    <br>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
     {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
   </div>
   {% endfor %}

@@ -19,7 +19,7 @@ button::-moz-focus-inner {
 }
 
 .wrapper {
-  margin-top: $header-height + 30px;
+  margin-top: 3em;
 }
 
 a {
@@ -31,76 +31,52 @@ a {
   }
 }
 
-header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  min-height: $header-height;
-  border-bottom: 1px solid #e8e8e8;
+.ext {
+  color: $raven-grey;
+  border-bottom: solid 1px $raven-grey;
+  text-decoration: none;
 
-  .title {
-    float: left;
-    line-height: $header-height;
-    text-align: center;
-    font-weight: $bold-weight;
-    font-size: 1.5em
-  }
-
-  a {
-    color: black;
+  &:hover {
+    text-decoration: none;
+    filter: brightness(250%);
   }
 }
 
 nav {
-  float: right;
+  padding-top: 2em;
+  width: 92%;
+  height: 50px;
+  border-bottom: 1px solid $soft-grey;
+  margin:  0 auto 0 auto;
+
+  a {
+    color: #737373;
+    &:hover {
+      text-decoration: none;
+      color: $raven-grey
+    }
+  }
 
   .active {
-    text-decoration: underline;
-  }
+    
+    border-bottom: 1px solid $raven-grey;
 
-  .dropdown-trigger {
-    display: none;
-  }
-
-  .menu-icon {
-    display: none;
+    a {
+      color: $raven-grey;
+    } 
   }
 
   li {
-    display: inline;
-    margin-left: 10px;
+    height: 26px;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding-bottom: 14px;
   }
 
-  @include media-query($small-screen-break) {
-    position: absolute;
-    top: ( $header-height - $nav-icon-height ) / 2;
-    right: $body-side-padding / 2;
-    background-color: #fdfdfd;
-    text-align: right;
-
-    .dropdown-trigger {
-      display: block;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      height: $nav-icon-height;
-    }
-
-    .dropdown {
-      display: none;
-    }
-
-    li {
-      display: block;
-    }
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 10px;
   }
 }
 
@@ -154,6 +130,7 @@ nav {
   max-width: $body-width - ($body-side-padding * 2);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3em;
 
   @include media-query($large-screen-break) {
     padding-left: $body-side-padding / 2;
@@ -164,7 +141,7 @@ nav {
 
 .not-found {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 2em;
   font-size: 3em;
   color: $bit-more-grey;
 }

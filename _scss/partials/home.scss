@@ -1,34 +1,41 @@
 .home-wrapper {
   display: flex;
   height: 100%;
-  padding: 150px 50px 0 50px;
+  padding: 90px 50px 0 50px;
 
   @include media-query($small-screen-break) {
     flex-direction: column;
-    align-items: center;
-    padding: 70px 50px 30px 50px;
+    padding: 30px 20px 0 20px;
   }
+}
+
+.home {
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+.dp-frame {
+  margin-top: 20px;
 }
 
 .dp {
   display: inline-block;
   height: $dp-dimension;
   width: $dp-dimension;
-  margin-right: 80px;
+  margin-right: 70px;
   object-fit: contain;
 
   @include media-query($large-screen-break) {
-    height: $dp-dimension * 1.2;
-    width: $dp-dimension * 1.2;
     margin-right: 50px;
   }
 
   @include media-query($small-screen-break) {
+    height: 100px;
+    width: 100px;
     display: block;
-    height: 100%;
-    width: 100%;
     margin-right: 0;
-    padding-bottom: 10px;
   }
 }
 
@@ -41,26 +48,11 @@
   .intro {
     font-size: $heading-size;
     font-weight: $bold-weight;
+    margin-bottom: 0.2em;
   }
 
   .bio {
-    a {
-      text-decoration: underline;
-      text-decoration-style: dashed;
-      text-decoration-color: $bit-more-grey;
-
-      &:hover {
-        filter: brightness(250%);
-      }
-    }
-  }
-
-  @include media-query($small-screen-break) {
-    .intro {
-      padding-bottom: 20px;
-    }
-
-    align-items: center;
+    margin-bottom: 0.3em;
   }
 }
 

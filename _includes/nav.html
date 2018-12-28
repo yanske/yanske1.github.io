@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    {% for item in site.data.nav.tabs %}
+      <li class="{% if item.url == page.url or (item.url == '/' and page.url == '/index.html') %}active{% endif %}" data-target="{{ item.url }}">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
