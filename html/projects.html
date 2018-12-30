@@ -4,16 +4,15 @@ title: projects
 permalink: projects.html
 ---
 
-<div class="work wrapper">
+<div class="projects wrapper">
   <div class="project-container">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects %}
       <div class="project">
         <a href="{{ project.url | relative_url }}">
           <img src="{{ site.baseurl }}/assets/img/work/{{ project.dp }}" alt="{{ project.title }}">
-        </a>
-        <a href="{{ project.url | relative_url }}">
           <div class="title">{{ project.title }}</div>
+          <div class="desc">{{ project.desc }}</div>
         </a>
       </div>
     {% endfor %}

@@ -6,8 +6,8 @@ date: 2017-07-01
 raw: easypassword
 dp: easypassword.png
 img: easypassword.png
-tags: Web
 github: https://github.com/yanske1/easyPassword
+desc: Password manager featuring facial recognition
 ---
 
 Recently, I have developed an interest in computer vision and crytopgraphy. To explore my interest, I am currently making a password management app which uses facial recognition to detect the user. 

@@ -1,4 +1,4 @@
-.work {
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
 }
 
 .project-container {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
@@ -17,7 +17,7 @@
 }
 
 .project {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
   a:hover {
     opacity: 0.75;
@@ -36,10 +36,17 @@
   .title {
     font-size: $title-size;
     font-weight: $bold-weight;
-    text-transform: uppercase;
     text-align: left;
     margin-left: 13%;
-    margin-bottom: 10px;
     cursor: pointer;
+  }
+
+  .desc {
+    text-align: left;
+    margin-left: 13%;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: $soft-grey-text;
+    overflow: hidden;
   }
 }

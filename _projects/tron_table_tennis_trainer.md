@@ -6,8 +6,8 @@ date: 2016-12-01
 raw: tttt
 dp: tttt.jpg
 img: tttt.jpg
-tags: Hardware
 github: https://github.com/yanske1/MTE100Project
+desc: Train your table tennis receives!
 ---
 
 For my 1A mechatronics concept course design project, my group and I decided to build an automatic ping-pong ball shooter. The Tron Table Tennis Trainer (TTTT) is build from 3-D printed gears, an acrylic base, LEGO pieces and Mindstorm sensors, programmed on the NXT using robotC (a C based programming language). 

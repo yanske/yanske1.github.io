@@ -6,8 +6,8 @@ date: 2017-08-01
 raw: soilerssuck
 dp: spoilerssuck.jpg
 img: spoilerssuck.jpg
-tags: Web
 github: https://github.com/yanske1/SpoilersSuck
+desc: Block Game of Thrones spoilers online
 ---
 
 Winter is coming? More like spoilers are coming. And on the Internet, they're EVERYWHERE. Thats why my friends and I made a Chrome extension for Hack the 6ix to address this problem.

@@ -62,6 +62,7 @@ function createProject() {
   echo "date: $date" >> $filePath
   echo "dp: projectImage.png" >> $filePath
   echo "img: projectImage.png" >> $filePath
+  echo "desc: Short description here" >> $filePath
   echo "---" >> $filePath
   echo >> $filePath
   echo "Content ..." >> $filePath

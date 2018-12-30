@@ -6,7 +6,7 @@ date: 2017-08-02
 raw: scavengerhunt
 dp: scavenger.jpg
 img: scavenger.jpg
-tags: Web Mobile Design
+desc: Host savenger hunt games with real time tracking
 github: https://github.com/yanske1/ScavengerHunt
 ---
 
