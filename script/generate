@@ -63,6 +63,7 @@ function createProject() {
   echo "dp: projectImage.png" >> $filePath
   echo "img: projectImage.png" >> $filePath
   echo "desc: Short description here" >> $filePath
+  echo "github: github link here " >> $filePath
   echo "---" >> $filePath
   echo >> $filePath
   echo "Content ..." >> $filePath
