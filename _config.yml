@@ -14,7 +14,7 @@ exclude: [
 
 markdown: kramdown
 plugins:
-  #- jekyll-compress-images
+  - jekyll-compress-images
   - jekyll-seo-tag
   - jekyll-sitemap
 
