@@ -1,6 +1,6 @@
 node_modules
+_compress_images_cache.yml
 _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
-._compress_images_cache.yml
