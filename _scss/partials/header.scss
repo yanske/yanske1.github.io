@@ -19,6 +19,7 @@ header {
   width: $dp-dimension;
   margin-right: 70px;
   object-fit: contain;
+  border-radius: 50%;
 
   @include media-query($large-screen-break) {
     margin-right: 50px;
