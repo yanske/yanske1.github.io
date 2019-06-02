@@ -1,0 +1,110 @@
+\documentclass[a4paper, 11pt, hidelinks]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage{lmodern}
+    \usepackage{enumitem}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=.80in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \input{glyphtounicode}
+
+\pdfgentounicode=1
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-4pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt}
+    \lineunder
+    \vspace{6pt}
+}
+
+\begin{document}
+\vspace*{-35pt}
+\begin{center}
+	\text{\fontsize{35}{40} \selectfont {Yan Ke}}\\
+    \vspace{10pt}
+    \texttt{\href{http://www.itsyan.me}{itsyan.me} • \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} • 647-262-0026 •
+    \href{http://www.github.com/yanske1}{github.com/yanske1}}
+\end{center}
+\vspace{-2pt}
+
+\header{Experience}
+\textbf{Khan Academy}, Software Engineering Intern \hfill\textit{Mountain View, CA • May 19 - Current}\\
+% Remove space after
+\vspace{2mm}
+% \vspace{-2mm}
+% \begin{itemize} \itemsep 1pt
+%     \item
+% \end{itemize}
+
+\textbf{University of Waterloo}, Research Assistant \hfill\textit{Waterloo, ON • Jan 19 - Apr 19}\\
+\vspace{-2mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt
+	\item Researched effects of recommendation systems on productivity in crowdsourcing platforms
+\end{itemize}
+
+\textbf{Scribd}, Data Engineering Intern \hfill\textit{San Francisco, CA • Sept 18 - Dec 18}\\
+\vspace{-2mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt
+	\item Redesigned data pipeline in Ruby using service discovery architecture, improving nightly performance
+    by 23\%, allowing the system to scale, and introducing support for Spark jobs
+	\item Reduced runtime of A/B testing data analysis by 86\% by migrating Hive queries to Scala Spark
+	\item Launched a concurrent image server using Go and OpenCV, serving 80k requests per second
+	\item Implemented K-means clustering on book cover assets to infer complementary colors in Go
+\end{itemize}
+
+\textbf{Shopify}, Backend Developer Intern \hfill\textit{Ottawa, ON • Jan 18 - Apr 18}\\
+\vspace{-2mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt
+	\item Enabled merchants to manage inventory and optimize shipping across locations by developing
+    multi-location features in Ruby on Rails, MySQL, Javascript, Elasticsearch, and Redis
+	\item Collaborated with product teams to deprecate and re-design checkout APIs / webhooks
+	\item Leveraged Redis to reduce inventory database deadlocks for high traffic merchants on checkout
+\end{itemize}
+
+\textbf{Aterica}, Software Engineer Intern \hfill\textit{Waterloo, ON • May 17 - Aug 17}\\
+\vspace{-2mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt
+	\item Designed, prototyped and shipped social network features with parental controls using SocketIO on
+    Android and Java backend; managed its incremental rollout to user groups
+	\item Created a user engagement dashboard using React and Flask to log, process, and analyze user activity
+    data for facilitating product decisions
+\end{itemize}
+
+\header{Projects \& Activities}
+{\textbf{Biomechatronics Student Design Team}, Software Team Lead}\hfill\textit{Sept 16 - Aug 17}\\
+Led team of developers to train a SVM classifier to control a prosthetic hand using EMG sensors\\
+\vspace{3mm}
+
+{\textbf{Personal Projects}}\hfill\\
+Hacked projects for personal use, including filtering out spoilers on web pages, password
+encryption, tracking new TV shows, and hosting scavenger hunt games -- see more on
+\texttt{\href{http://www.itsyan.me/projects}{itsyan.me/projects}}\\
+\vspace{3mm}
+
+\header{Skills}
+\hspace{-10pt}
+\begin{tabular}{ l l }
+    Languages : & Ruby, Python, Java, C / C++, Go, Scala, Javascript, SQL, Bash \\
+    Tools \& Frameworks : & Ruby on Rails, Flask, Spark, Chrome, Android, Redis, React, Docker, Git \\
+\end{tabular}
+\vspace{3mm}
+
+\header{Education}
+\textbf{University of Waterloo}, BCS Computer Science, Statistics Minor \hfill\textit{Sept 16 - Apr 21}\\
+\vspace{-2mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt
+	\item 94\% average (3.98 / 4 GPA), Dean's List all terms, First in Class Engineering Scholarship 2018
+\end{itemize}
+
+\end{document}
