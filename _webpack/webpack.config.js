@@ -1,9 +1,9 @@
 
 module.exports = {
-  entry: "./webpack/entry.js",
+  entry: "./src/entry.js",
   output: {
-    path: __dirname + '/assets/js/',
-    filename: "bundle.js"
+    path: __dirname,
+    filename: "../assets/js/bundle.js"
   },
   module: {
     rules: [
