@@ -6,4 +6,4 @@ Personal website powered by Jekyll & Markdown. Hosted on <https://itsyan.me>
 
 ### Development
 
-This site uses NPM and Webpack for dependencies. To start, run `npm install && webpack` to generate the bundled assets (if need), and `jekyll s` to serve the website.
+This site uses NPM and Webpack for dependencies. To start, run `make webpack` to generate the bundled assets (if need), and `make dev` to serve the website.
