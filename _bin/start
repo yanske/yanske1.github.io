@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# TODO: Compare edit time - don't need NPM / Webpack if bundle.js is up to date
-# Check for changes in Webpack folder
-npm install
-webpack
-jekyll s
