@@ -1,4 +1,5 @@
-webpack: ## Update webpack
+deps: ## Update dependencies (Gemfile & Webpack)
+	bundle install
 	cd _webpack && npm install && webpack
 
 dev: ## Build local site

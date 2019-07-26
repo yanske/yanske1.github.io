@@ -32,6 +32,12 @@ collections:
 compress_images:
   images_path: "assets/img/**/*.{gif,png,jpg,jpeg,svg}"
 
+imageoptim:
+  svgo: false
+
+# TODO: fork and fix infinite regeneration problem.
+cache_file: "_compress_images_cache.yml"
+
 # --- Jekyll SEO ---
 title: Yan Ke
 description: >-
@@ -49,8 +55,3 @@ social:
     - https://github.com/yanske1
     - https://www.facebook.com/yansongke
     - https://www.linkedin.com/in/yanske1/
-
-# -- Jekyll Tex ---
-# tex:
-#   source: assets
-#   output: assets
