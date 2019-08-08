@@ -1,15 +1,10 @@
 baseurl: ""
 exclude: [
-  'node_modules',
-  'vendor',
-  'script',
-  'webpack',
-  'webpack.config.js',
-  'package.json',
-  'package-lock.json',
+  '.gitignore',
   'Gemfile',
   'Gemfile.lock',
-  'README.md'
+  'Makefile',
+  'README.md',
 ]
 
 markdown: kramdown
