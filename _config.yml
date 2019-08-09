@@ -8,6 +8,17 @@ exclude: [
 ]
 
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'syntax'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
