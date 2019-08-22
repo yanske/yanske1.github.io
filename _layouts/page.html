@@ -4,10 +4,7 @@
   <body>
     <div class="container">
       <div class="template wrapper">
-        <div>
-          <!-- TODO: figure out a UI solution for this with more nav.  -->
-          <a href="{{ layout.url }}">Back to {{ layout.name }}</a>
-        </div>
+        {% include nav.html %}
         <br/>
         <div class="template-title">
           {{ page.title }}
