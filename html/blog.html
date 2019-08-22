@@ -5,6 +5,7 @@ permalink: blog.html
 ---
 
 <div class="blog wrapper">
+  <!-- TODO: Add a search bar here. -->
   {% for post in site.posts %}
   <div class="timeline-item">
     <a class="post-link" href="{{ post.url | relative_url }}">
@@ -12,7 +13,8 @@ permalink: blog.html
     </a>
     <br>
     <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
+    {{ post.excerpt }}
+    <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
   </div>
   {% endfor %}
 </div>
