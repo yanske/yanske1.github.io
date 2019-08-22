@@ -11,12 +11,12 @@
     </a>
     <a href="/projects.html">
       <li class="{% if page.url == '/projects.html' or page.layout == 'project' %}active{% endif %}" data-target="/projects.html">
-        Projects
+        {% if page.layout == 'project' %}<span class="back"><<</span> {% endif %}Projects
       </li>
     </a>
     <a href="/blog.html">
       <li class="{% if page.url == '/blog.html' or page.layout == 'post' %}active{% endif %}" data-target="/blog.html">
-        Blog
+        {% if page.layout == 'post' %}<span class="back"><<</span> {% endif %}Blog
       </li>
     </a>
   </ul>

@@ -25,6 +25,15 @@
     margin: 0;
     padding: 0;
     width: 100%;
+
+    .active {
+      border: none;
+    }
+
+    .back {
+      // Moves the back arrow a bit up to the center.
+      vertical-align: 7%;
+    }
   }
 }
 
