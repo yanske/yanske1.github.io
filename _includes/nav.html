@@ -1,11 +1,23 @@
 <nav>
   <ul>
-    {% for item in site.data.nav.tabs %}
-      <a href="{{ item.url }}">
-        <li class="{% if item.url == page.url or (item.url == '/' and page.url == '/index.html') %}active{% endif %}" data-target="{{ item.url }}">
-          {{ item.title }}
-        </li>
-      </a>
-    {% endfor %}
+    <a href="/">
+      <li class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" data-target="/">
+        {% if page.layout == 'project' or page.layout == 'post' %}
+          Home
+        {% else %}
+          About
+        {% endif %}
+      </li>
+    </a>
+    <a href="/projects.html">
+      <li class="{% if page.url == '/projects.html' or page.layout == 'project' %}active{% endif %}" data-target="/projects.html">
+        Projects
+      </li>
+    </a>
+    <a href="/blog.html">
+      <li class="{% if page.url == '/blog.html' or page.layout == 'post' %}active{% endif %}" data-target="/blog.html">
+        Blog
+      </li>
+    </a>
   </ul>
 </nav>
