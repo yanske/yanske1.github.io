@@ -59,3 +59,12 @@ a {
   font-size: 3em;
   color: $bit-more-grey;
 }
+
+.swup-transition-main {
+  opacity: 1;
+  transition: opacity .075s;
+}
+
+html.is-animating .swup-transition-main {
+  opacity: 0;
+}

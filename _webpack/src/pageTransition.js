@@ -1,31 +1,21 @@
 import Swup from 'swup';
 
-var MAIN_PAGES = ['/', '/projects.html', '/blog.html']
-
-let accepted_links = []
-MAIN_PAGES.forEach(function(link) {
-  accepted_links.push('a[href="' + link + '"]');
-  accepted_links.push('a[href="' + window.location.origin + link + '"]');
-});
-
-let option = {
-  elements: ['.content'],
-  LINK_SELECTOR: accepted_links.join(' ,'),
-  scroll: false,
-  debugMode: false
+const mainPages = ['/', '/projects.html', '/blog.html']
+const option = {
+  containers: ['.content'],
+  linkSelector: mainPages.map(link => 'a[href="' + link + '"]').join(' ,'),
 }
 
-var swup = new Swup(option);
+const swup = new Swup(option);
 swup.on('contentReplaced', function () {
-  let nav = document.getElementsByTagName('nav')[0];
-  let uls = nav.getElementsByTagName('li');
-  var CUR_PATH = window.location.pathname;
+  const nav = document.getElementsByTagName('nav')[0];
+  const tabs = nav.getElementsByTagName('li');
 
-  for (let i = 0; i < uls.length; i++) {
-    if (uls[i].dataset.target == CUR_PATH) {
-      uls[i].classList.add('active');
+  for (var tab of tabs) {
+    if (tab.dataset.target == window.location.pathname) {
+      tab.classList.add('active');
     } else {
-      uls[i].classList.remove('active');
+      tab.classList.remove('active');
     }
   }
 });
