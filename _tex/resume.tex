@@ -6,6 +6,7 @@
     \usepackage{hyperref}
     \usepackage{lmodern}
     \usepackage{enumitem}
+    \usepackage{xcolor}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
     \usepackage[margin=.80in]{geometry}
@@ -16,47 +17,61 @@
 
 \pdfgentounicode=1
 
+\definecolor{weaktext}{HTML}{565656}
+\definecolor{bodytext}{HTML}{2A2A2A}
+\definecolor{bigtext}{HTML}{000000}
+
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
     \hrulefill \\
 }
 
 \newcommand{\header} [1] {
+    \color{bigtext}
     {\hspace*{-4pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt}
+    \color{bodytext}
     \lineunder
     \vspace{6pt}
+}
+
+\newcommand{\jobheader} [4] {
+    \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3 • #4}\\
+    \vspace{-2mm} \color{bodytext}
+}
+
+\newcommand{\nolocheader} [3] {
+    \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3}\\
+    \color{bodytext}
+}
+
+\newcommand{\minheader} [1] {
+    \color{bigtext}\textbf{#1}\hfill\\
+    \color{bodytext}
 }
 
 \begin{document}
 \vspace*{-35pt}
 \begin{center}
-	\text{\fontsize{35}{40} \selectfont {Yan Ke}}\\
+	\text{\fontsize{35}{40} \selectfont \color{bigtext}{Yan Ke}}\\
     \vspace{10pt}
+    \color{weaktext}
     \texttt{\href{http://www.itsyan.me}{itsyan.me} • \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} • 647-262-0026 •
     \href{http://www.github.com/yanske1}{github.com/yanske1}}
 \end{center}
 \vspace{-2pt}
 
 \header{Experience}
-\textbf{Khan Academy}, Software Engineering Intern \hfill\textit{Mountain View, CA • May 19 - Aug 19}\\
-\vspace{-2mm}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
+\jobheader{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt 
     \item Worked with product and analytic teams to revamp A/B testing metrics based on time spent on site
-    using Python, Dataflow, and BigQuery, saving \$12k monthly in GCP costs
+    using Python, Dataflow, and BigQuery, saving \$12k monthly in Google Cloud costs
     \item Developed a load testing framework for evaluating service performances on App Engine in Go
     \item Designed a server-side GraphQL schema stitcher in Go, increasing query performances by 42\%
 \end{itemize}
 
-\textbf{University of Waterloo}, Research Assistant \hfill\textit{Waterloo, ON • Jan 19 - Apr 19}\\
-\vspace{-2mm}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
-	\item Researched effects of recommendation systems on productivity in crowdsourcing platforms
-\end{itemize}
-
-\textbf{Scribd}, Data Engineering Intern \hfill\textit{San Francisco, CA • Sept 18 - Dec 18}\\
-\vspace{-2mm}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
+\jobheader{Scribd}{Data Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
 	\item Redesigned data pipeline in Ruby using service discovery architecture, improving nightly performance
     by 23\%, allowing the system to scale, and introducing support for Spark jobs
 	\item Reduced runtime of A/B testing data analysis by 86\% by migrating Hive queries to Scala Spark
@@ -64,18 +79,16 @@
 	\item Implemented K-means clustering on book cover assets to infer complementary colors in Go
 \end{itemize}
 
-\textbf{Shopify}, Backend Developer Intern \hfill\textit{Ottawa, ON • Jan 18 - Apr 18}\\
-\vspace{-2mm}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
+\jobheader{Shopify}{Backend Developer Intern}{Ottawa, ON}{Jan 18 - Apr 18}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
 	\item Enabled merchants to manage inventory and optimize shipping across locations by developing
     multi-location features in Ruby on Rails, MySQL, Javascript, Elasticsearch, and Redis
 	\item Collaborated with product teams to deprecate and re-design checkout APIs / webhooks
 	\item Leveraged Redis to reduce inventory database deadlocks for high traffic merchants on checkout
 \end{itemize}
 
-\textbf{Aterica}, Software Engineer Intern \hfill\textit{Waterloo, ON • May 17 - Aug 17}\\
-\vspace{-2mm}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
+\jobheader{Aterica}{Software Engineer Intern}{Waterloo, ON}{May 17 - Aug 17}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
 	\item Designed, prototyped and shipped social network features with parental controls using SocketIO on
     Android and Java backend; managed its incremental rollout to user groups
 	\item Created a user engagement dashboard using React and Flask to log, process, and analyze user activity
@@ -83,11 +96,16 @@
 \end{itemize}
 
 \header{Projects \& Activities}
-{\textbf{Biomechatronics Student Design Team}, Software Team Lead}\hfill\textit{Sept 16 - Aug 17}\\
+\nolocheader{University of Waterloo - HCI Lab}{Research Assistant}{Jan 19 - Apr 19}
+Researched effects of recommendation systems on productivity in crowdsourcing platforms,
+developed platforms for aggregating crowdsourced data using Ruby on Rails, React and Docker \\
+\vspace{3mm}
+
+\nolocheader{Biomechatronics Student Design Team}{Software Team Lead}{Sept 16 - Aug 17}
 Led team of developers to train a SVM classifier to control a prosthetic hand using EMG sensors\\
 \vspace{3mm}
 
-{\textbf{Personal Projects}}\hfill\\
+\minheader{Personal Projects}
 Hacked projects for personal use, including filtering out spoilers on web pages, password
 encryption, tracking new TV shows, and hosting scavenger hunt games -- see more on
 \texttt{\href{http://www.itsyan.me/projects}{itsyan.me/projects}}\\
@@ -96,14 +114,14 @@ encryption, tracking new TV shows, and hosting scavenger hunt games -- see more 
 \header{Skills}
 \hspace{-10pt}
 \begin{tabular}{ l l }
-    Languages: & Python, Go, Ruby, Java, C / C++, Scala, Javascript, SQL, Bash \\
-    Frameworks: & Ruby on Rails, Flask, Spark, Chrome, Android, React, GraphQL \\
-    Infrastructure: & Google Cloud Platform, Docker, Redis, Elasticsearch, Git
+    \color{bigtext}\textbf{Languages}:\color{bodytext} & Python, Go, Ruby, Java, C / C++, Scala, Javascript, SQL, Bash \\[2pt]
+    \color{bigtext}\textbf{Frameworks}:\color{bodytext} & Ruby on Rails, Flask, Spark, Chrome, Android, React, GraphQL \\[2pt]
+    \color{bigtext}\textbf{Infrastructure}:\color{bodytext} & Google Cloud Platform, Docker, Redis, Elasticsearch, Git
 \end{tabular}
 \vspace{3mm}
 
 \header{Education}
-\textbf{University of Waterloo}, BCS Computer Science, Statistics Minor \hfill\textit{Sept 16 - Apr 21}\\
+\nolocheader{University of Waterloo}{BCS Computer Science, Statistics Minor}{Sept 16 - Apr 21}
 \vspace{-2mm}
 \begin{itemize}[leftmargin=2em] \itemsep 1pt
 	\item 94\% average (3.98 / 4 GPA), Dean's List all terms, First in Class Engineering Scholarship 2018
