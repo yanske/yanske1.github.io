@@ -7,10 +7,10 @@ deps: ## Update dependencies (Gemfile & Webpack & Compress image)
 dev: ## Build local site
 	jekyll s
 
-new_post: ## New blog post template
-	@echo "---\nlayout: post\ntitle: Post Title\ndate: $$(date "+%B %d, %Y")\n\
-	---\n\nContent ..." >> _posts/$$(date +%Y-%m-%d)-Post-Title.md
-	@echo "\033[0;32mCreated\033[0m _posts/$$(date +%Y-%m-%d)-Post-Title.md"
+new_post: ## New blog post template. Usage: make new_post title="Post Title"
+	@echo "---\nlayout: post\ntitle: $(title)\ndate: $$(date "+%B %d, %Y")\n\
+	---\n\nContent ..." >> _posts/$$(date +%Y-%m-%d)-$$(echo $(title) | sed -e 's/ /-/g').md
+	@echo "\033[0;32mCreated\033[0m _posts/$$(date +%Y-%m-%d)-$$(echo $(title) | sed -e 's/ /-/g').md"
 
 new_project: ## New project page template
 	@echo "---\nlayout: project\ntitle: Project Title\ntools: A, B, C\n\
