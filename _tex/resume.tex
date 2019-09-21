@@ -37,17 +37,17 @@
 
 \newcommand{\jobheader} [4] {
     \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3 • #4}\\
-    \vspace{-2mm} \color{bodytext}
+    \vspace{-1mm} \color{bodytext}
 }
 
 \newcommand{\nolocheader} [3] {
     \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3}\\
-    \color{bodytext}
+    \vspace{-1mm} \color{bodytext}
 }
 
 \newcommand{\minheader} [1] {
     \color{bigtext}\textbf{#1}\hfill\\
-    \color{bodytext}
+    \vspace{-1mm} \color{bodytext}
 }
 
 \begin{document}
@@ -56,7 +56,9 @@
 	\text{\fontsize{35}{40} \selectfont \color{bigtext}{Yan Ke}}\\
     \vspace{10pt}
     \color{weaktext}
-    \texttt{\href{http://www.itsyan.me}{itsyan.me} • \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} • 647-262-0026 •
+    \texttt{\href{http://www.itsyan.me}{itsyan.me} •
+    \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} •
+    647-262-0026 •
     \href{http://www.github.com/yanske1}{github.com/yanske1}}
 \end{center}
 \vspace{-2pt}
@@ -65,16 +67,16 @@
 \jobheader{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}
 \begin{itemize}[leftmargin=2em] \itemsep 1pt 
     \item Worked with product and analytic teams to revamp A/B testing metrics based on time spent on site
-    using Python, Dataflow, and BigQuery, saving \$12k monthly in Google Cloud costs
+    using Python, Dataflow, and BigQuery, saving \$12k monthly in data streaming costs
     \item Developed a load testing framework for evaluating service performances on App Engine in Go
     \item Designed a server-side GraphQL schema stitcher in Go, increasing query performances by 42\%
 \end{itemize}
 
 \jobheader{Scribd}{Data Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}
 \begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
-	\item Redesigned data pipeline in Ruby using service discovery architecture, improving nightly performance
-    by 23\%, allowing the system to scale, and introducing support for Spark jobs
-	\item Reduced runtime of A/B testing data analysis by 86\% by migrating Hive queries to Scala Spark
+	\item Redesigned data pipeline management platform in Ruby using service discovery architecture,
+    improving nightly performance by 23\%, and introducing support for Spark jobs
+	\item Reduced runtime of A/B testing pipeline by 86\% by migrating Hive queries to Scala Spark
 	\item Launched a concurrent image server using Go and OpenCV, serving 80k requests per second
 	\item Implemented K-means clustering on book cover assets to infer complementary colors in Go
 \end{itemize}
@@ -97,19 +99,22 @@
 
 \header{Projects \& Activities}
 \nolocheader{University of Waterloo - HCI Lab}{Research Assistant}{Jan 19 - Apr 19}
-Researched effects of recommendation systems on productivity in crowdsourcing platforms,
-developed platforms for aggregating crowdsourced data using Ruby on Rails, React and Docker \\
-\vspace{3mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+    \item Researched effects of recommendation systems on productivity in crowdsourcing platforms
+    \item Developed platforms for aggregating crowdsourced data using Ruby on Rails, React and Docker
+\end{itemize}
 
 \nolocheader{Biomechatronics Student Design Team}{Software Team Lead}{Sept 16 - Aug 17}
-Led team of developers to train a SVM classifier to control a prosthetic hand using EMG sensors\\
-\vspace{3mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+    \item Led team of developers to train a SVM classifier to control a prosthetic hand using EMG sensors
+\end{itemize}
 
 \minheader{Personal Projects}
-Hacked projects for personal use, including filtering out spoilers on web pages, password
-encryption, tracking new TV shows, and hosting scavenger hunt games -- see more on
-\texttt{\href{http://www.itsyan.me/projects}{itsyan.me/projects}}\\
-\vspace{3mm}
+\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+    \item Hacked projects for personal use and learning, including filtering out
+    spoilers on web pages, tracking new TV shows, and hosting scavenger hunt games -- see more on
+    \texttt{\href{http://www.itsyan.me/projects}{itsyan.me/projects}}
+\end{itemize}
 
 \header{Skills}
 \hspace{-10pt}
@@ -122,7 +127,6 @@ encryption, tracking new TV shows, and hosting scavenger hunt games -- see more 
 
 \header{Education}
 \nolocheader{University of Waterloo}{BCS Computer Science, Statistics Minor}{Sept 16 - Apr 21}
-\vspace{-2mm}
 \begin{itemize}[leftmargin=2em] \itemsep 1pt
 	\item 94\% average (3.98 / 4 GPA), Dean's List all terms, First in Class Engineering Scholarship 2018
 \end{itemize}
