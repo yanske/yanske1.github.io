@@ -6,21 +6,21 @@ nav {
   margin:  0 auto 0 auto;
 
   a {
-    color: $soft-grey-text;
     &:hover {
       text-decoration: none;
-      color: $raven-grey
+      li {
+        color: $raven-grey;
+      }
     }
   }
 
   .active {
     border-bottom: 1px solid $raven-grey;
-    a {
-      color: $raven-grey;
-    } 
+    color: $raven-grey;
   }
 
   li {
+    color: $soft-grey-text;
     height: $tab-height;
     display: inline-block;
     margin: 0 1em 0 0;
