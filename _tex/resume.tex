@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt, hidelinks]{article}
+\documentclass[a4paper, 12pt, hidelinks]{article}
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
@@ -30,105 +30,92 @@
     \color{bigtext}
     {\hspace*{-4pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt}
-    \color{bodytext}
+    \color{weaktext}
     \lineunder
     \vspace{6pt}
-}
-
-\newcommand{\jobheader} [4] {
-    \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3 • #4}\\
-    \vspace{-1mm} \color{bodytext}
+    \color{bodytext}
 }
 
 \newcommand{\nolocheader} [3] {
-    \color{bigtext}\textbf{#1}, #2 \color{weaktext}\hfill\textit{#3}\\
-    \vspace{-1mm} \color{bodytext}
+    \color{bigtext}\textbf{#1}, {#2}
+    \color{weaktext}\hfill{\small\textit{#3}}\\
+    \vspace{-3mm} \color{bodytext}
 }
 
-\newcommand{\minheader} [1] {
-    \color{bigtext}\textbf{#1}\hfill\\
-    \vspace{-1mm} \color{bodytext}
+\newcommand{\jobheader} [4] {
+    \nolocheader{#1}{#2}{\small\textit{#3} • \textit{#4}}
 }
 
 \begin{document}
 \vspace*{-35pt}
 \begin{center}
-	\text{\fontsize{35}{40} \selectfont \color{bigtext}{Yan Ke}}\\
+	\text{\fontsize{36}{40} \selectfont \color{bigtext}{Yan Ke}}\\
     \vspace{10pt}
     \color{weaktext}
     \texttt{\href{http://www.itsyan.me}{itsyan.me} •
     \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} •
-    647-262-0026 •
+    323-886-2888 •
     \href{http://www.github.com/yanske1}{github.com/yanske1}}
 \end{center}
-\vspace{-2pt}
 
 \header{Experience}
+
+\jobheader{Google}{Software Engineering Intern}{Sunnyvale, CA}{Jan 20 - Apr 20}
+\vspace{6mm}
+
 \jobheader{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt 
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
     \item Worked with product and analytics teams to revamp A/B testing metrics based on time spent on site
-    using Python, Dataflow, and BigQuery, saving \$12k monthly in data streaming costs
-    \item Developed a Go load testing framework for evaluating service performances on App Engine
-    \item Designed a server-side GraphQL schema stitcher in Go, increasing query performances by 42\%
+    using Python, Dataflow, and BigQuery, saving \$12k per month
+    \item Developed a Go load testing framework for evaluating performances on App Engine
+    \item Designed a server-side GraphQL schema stitcher in Go, increasing performance by 42\%
 \end{itemize}
 
-\jobheader{Scribd}{Data Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+\jobheader{Scribd}{Software Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
 	\item Redesigned data pipeline management platform in Ruby using service discovery architecture,
-    improving nightly performance by 23\%, and introducing support for Spark jobs
-	\item Reduced runtime of A/B testing pipeline by 86\% by migrating Hive queries to Scala Spark
-	\item Launched a concurrent image server using Go and OpenCV, serving 80k requests per second
-	\item Implemented K-means clustering on book cover assets to infer complementary colors using Go
+    improving nightly performance by 23\%
+	\item Reduced runtime of A/B testing by 86\% by migrating Hive queries to Scala Spark
+	\item Implemented K-means clustering on book cover assets to automate border color selection,
+    launched on a concurrent image server using Go and OpenCV
 \end{itemize}
 
-\jobheader{Shopify}{Backend Developer Intern}{Ottawa, ON}{Jan 18 - Apr 18}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+\jobheader{Shopify}{Software Engineering Intern}{Ottawa, ON}{Jan 18 - Apr 18}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
 	\item Enabled merchants to manage inventory and optimize shipping across locations by developing
-    multi-location features using Ruby on Rails, MySQL, Javascript, Elasticsearch, and Redis
-	\item Collaborated with product teams to deprecate and re-design checkout APIs / webhooks
-	\item Leveraged Redis to reduce inventory database deadlocks on checkout for high traffic merchants
+    multi-location features using Ruby on Rails and JavaScript
+	\item Leveraged Redis to reduce inventory database deadlocks on checkout for merchants
 \end{itemize}
 
 \jobheader{Aterica}{Software Engineer Intern}{Waterloo, ON}{May 17 - Aug 17}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
 	\item Designed, prototyped and shipped social networking features with parental controls using Android,
-    Java backend, Firebase, and SocketIO; managed its incremental rollout to user groups
-	\item Created a user engagement dashboard using React and Flask to log, process, and analyze user activity
-    data for facilitating product decisions
+    Java backend, Firebase, and SocketIO
 \end{itemize}
 
 \header{Projects \& Activities}
-\nolocheader{University of Waterloo - HCI Lab}{Research Assistant}{Jan 19 - Apr 19}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
-    \item Investigated effects of recommendation systems on productivity through literature reviews
-    \item Developed platforms for aggregating crowdsourced data using Ruby on Rails, React and Docker
+
+\nolocheader{University of Waterloo - HCI Lab}{Software Engineering Intern}{Jan 19 - Apr 19}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
+	\item Investigated effects of recommendation systems on productivity through literature reviews
+	\item Developed a crowdsource data collection platform using Ruby on Rails, React and Docker
 \end{itemize}
 
-\nolocheader{Biomechatronics Student Design Team}{Software Team Lead}{Sept 16 - Aug 17}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
-    \item Led team in using EMG sensors to train a SVM classifier to control a prosthetic hand
-\end{itemize}
-
-\minheader{Personal Projects}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt \color{bodytext}
-    \item Hacked projects for personal use and learning, including filtering out
-    spoilers on web pages, tracking new TV shows, and hosting scavenger hunt games -- see more on
-    \texttt{\href{http://www.itsyan.me/projects}{itsyan.me/projects}}
+\nolocheader{Biomechatronics Student Design Team}{Software Lead}{Sept 16 - Aug 17}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
+	\item Led team to train a SVM classifier to control a prosthetic hand using EMG sensors
 \end{itemize}
 
 \header{Skills}
+
 \hspace{-10pt}
 \begin{tabular}{ l l }
-    \color{bigtext}\textbf{Languages}:\color{bodytext} & Python, Go, Ruby, Java, C / C++, Scala, Javascript, SQL, Bash \\[2pt]
-    \color{bigtext}\textbf{Frameworks}:\color{bodytext} & Ruby on Rails, Flask, Spark, Chrome, Android, React, GraphQL \\[2pt]
-    \color{bigtext}\textbf{Infrastructure}:\color{bodytext} & Google Cloud Platform, Docker, Redis, Elasticsearch, Git
+    \color{bigtext}\textbf{Languages}\color{bodytext} & Python, Go, Ruby, Java, C / C++, Scala, JavaScript, SQL, Bash \\[2pt]
+    \color{bigtext}\textbf{Frameworks}\color{bodytext} & Ruby on Rails, Flask, Spark, Chrome, Android, React, GraphQL \\[2pt]
+    \color{bigtext}\textbf{Infrastructure}\color{bodytext} & Google Cloud Platform, Docker, Redis, Elasticsearch, Git
 \end{tabular}
 \vspace{3mm}
 
 \header{Education}
-\nolocheader{University of Waterloo}{BCS Computer Science, Statistics Minor}{Sept 16 - Apr 21}
-\begin{itemize}[leftmargin=2em] \itemsep 1pt
-	\item 94\% average (3.98 / 4 GPA), Dean's List all terms, First in Class Engineering Scholarship 2018
-\end{itemize}
-
+\nolocheader{University of Waterloo}{BCS Computer Science (94\% GPA)}{Sept 16 - Apr 21}
 \end{document}

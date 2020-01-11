@@ -7,9 +7,9 @@ permalink: index.html
   <h3>👋 Hi, I'm Yan!</h3>
   <p>
     {% assign current_job = site.data.experience.current %}
-    I'm a 3rd-year Computer Science / Statistics student at the <a class="ext" href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>.
+    I'm a 4th-year Computer Science at the <a class="ext" href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>.
     {% if current_job %}
-      Currently I'm interning at <a class="ext" href={{ current.link }} target="_blank" rel="noopener">{{ current.name }}</a>.
+      Currently I'm interning at <a class="ext" href={{ current_job.link }} target="_blank" rel="noopener">{{ current_job.name }}</a>.
     {% endif %}
   </p>
   <p>

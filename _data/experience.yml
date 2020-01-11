@@ -1,10 +1,13 @@
 current:
+  name: Google
+  link: https://www.google.com/
+
 previous:
   - name: Khan Academy
     link: https://www.khanacademy.org/
-  
+
   - name: Scribd
     link: https://www.scribd.com/
-  
+
   - name: Shopify
     link: https://www.shopify.ca/
