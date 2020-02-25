@@ -9,6 +9,7 @@
     \usepackage{xcolor}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
+    \usepackage{tikz}
     \usepackage[margin=.80in]{geometry}
     \textheight=10in
     \pagestyle{empty}
@@ -39,11 +40,32 @@
 \newcommand{\nolocheader} [3] {
     \color{bigtext}\textbf{#1}, {#2}
     \color{weaktext}\hfill{\small\textit{#3}}\\
-    \vspace{-3mm} \color{bodytext}
+    \vspace{-2mm} \color{bodytext}
 }
 
 \newcommand{\jobheader} [4] {
     \nolocheader{#1}{#2}{\small\textit{#3} • \textit{#4}}
+}
+
+\newcommand{\iclink} [2] {
+    \!\!\href{#1}{#2 \!\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex] {
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+    }\!\!}
 }
 
 \begin{document}
@@ -53,7 +75,7 @@
     \vspace{10pt}
     \color{weaktext}
     \texttt{\href{http://www.itsyan.me}{itsyan.me} •
-    \href{mailto:yske@uwaterloo.ca}{yske@uwaterloo.ca} •
+    \href{mailto:yansongke1@gmail.com}{yansongke1@gmail.com} •
     323-886-2888 •
     \href{http://www.github.com/yanske1}{github.com/yanske1}}
 \end{center}
@@ -61,7 +83,13 @@
 \header{Experience}
 
 \jobheader{Google}{Software Engineering Intern}{Sunnyvale, CA}{Jan 20 - Apr 20}
-\vspace{6mm}
+\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
+    \item Designed an \iclink{https://github.com/google/ts-bridge}{open-source shared monitoring tool}
+    using Go to import customer metrics from InfluxDB to Stackdriver, allowing for fault attribution
+    via SLOs during outages
+    \item Developed internal application to track SRE customer engagements using Go and AngularJS,
+    added new workflow features and increased infrastructure support
+\end{itemize}
 
 \jobheader{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}
 \begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
@@ -93,7 +121,7 @@
     Java backend, Firebase, and SocketIO
 \end{itemize}
 
-\header{Projects \& Activities}
+\header{Activities}
 
 \nolocheader{University of Waterloo - HCI Lab}{Research Assistant}{Jan 19 - Apr 19}
 \begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
@@ -101,16 +129,11 @@
 	\item Developed a crowdsource data collection platform using Ruby on Rails, React and Docker
 \end{itemize}
 
-\nolocheader{Biomechatronics Student Design Team}{Software Lead}{Sept 16 - Aug 17}
-\begin{itemize}[leftmargin=1.8em] \itemsep 1pt \color{bodytext}
-	\item Led team to train a SVM classifier to control a prosthetic hand using EMG sensors
-\end{itemize}
-
 \header{Skills}
 
 \hspace{-10pt}
 \begin{tabular}{ l l }
-    \color{bigtext}\textbf{Languages}\color{bodytext} & Python, Go, Ruby, Java, C / C++, Scala, JavaScript, SQL, Bash \\[2pt]
+    \color{bigtext}\textbf{Languages}\color{bodytext} & Python, Go, Ruby, Java, C++, JavaScript, SQL, Bash \\[2pt]
     \color{bigtext}\textbf{Frameworks}\color{bodytext} & Ruby on Rails, Flask, Spark, Chrome, Android, React, GraphQL \\[2pt]
     \color{bigtext}\textbf{Infrastructure}\color{bodytext} & Google Cloud Platform, Docker, Redis, Elasticsearch, Git
 \end{tabular}
