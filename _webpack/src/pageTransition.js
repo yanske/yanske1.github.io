@@ -1,6 +1,6 @@
 import Swup from 'swup';
 
-const mainPages = ['/', '/projects.html', '/blog.html']
+const mainPages = ['/', '/blog.html']
 const option = {
   containers: ['.content'],
   linkSelector: mainPages.map(link => 'a[href="' + link + '"]').join(' ,'),

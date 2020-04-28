@@ -28,10 +28,6 @@ sass:
   sass_dir: _scss
   style: :compressed
 
-collections:
-  projects:
-    output: true
-
 # --- Jekyll SEO ---
 title: Yan Ke
 description: >-

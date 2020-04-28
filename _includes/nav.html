@@ -2,16 +2,7 @@
   <ul>
     <a href="/">
       <li class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" data-target="/">
-        {% if page.layout == 'project' or page.layout == 'post' %}
-          Home
-        {% else %}
-          About
-        {% endif %}
-      </li>
-    </a>
-    <a href="/projects.html">
-      <li class="{% if page.url == '/projects.html' or page.layout == 'project' %}active{% endif %}" data-target="/projects.html">
-        {% if page.layout == 'project' %}<span class="back"><<</span> {% endif %}Projects
+        {% if page.layout == 'post' %}Home{% else %}About{% endif %}
       </li>
     </a>
     <a href="/blog.html">

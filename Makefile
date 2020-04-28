@@ -12,14 +12,6 @@ new_post: ## New blog post template. Usage: make new_post title="Post Title"
 	---\n\nContent ..." >> _posts/$$(date +%Y-%m-%d)-$$(echo $(title) | sed -e 's/ /-/g').md
 	@echo "\033[0;32mCreated\033[0m _posts/$$(date +%Y-%m-%d)-$$(echo $(title) | sed -e 's/ /-/g').md"
 
-new_project: ## New project page template
-	@echo "---\nlayout: project\ntitle: Project Title\ntools: A, B, C\n\
-	date: $$(date +%Y-%m-%d)\ndp: icon.png\nimg: body.png\n\
-	desc: Short description here\n\
-	github: https://github.com/yanske1/project\n---\n\nContent ..."\
-	>> _projects/project_title.md
-	@echo "\033[0;32mCreated\033[0m _projects/project_title.md"
-
 help: ## Display help message
 	@awk 'BEGIN {FS = ":.*##"; \
 	printf "Usage:\n  make \033[36m<target>\033[0m\n\nTargets:\n"}\
