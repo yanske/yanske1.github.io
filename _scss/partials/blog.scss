@@ -1,6 +1,11 @@
 .blog {
 	padding-left: $wrapper-text-padding;
-	padding-right: $wrapper-text-padding;
+  padding-right: $wrapper-text-padding;
+
+  @include media-query($small-screen-break) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .timeline-item {

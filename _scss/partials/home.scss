@@ -3,4 +3,9 @@
   padding-right: $wrapper-text-padding;
   font-size: large;
   line-height: 1.5em;
+
+  @include media-query($small-screen-break) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
