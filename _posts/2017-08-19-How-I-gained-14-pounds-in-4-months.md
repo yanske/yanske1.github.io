@@ -6,7 +6,7 @@ date: August 19, 2017
 
 At Waterloo, it always amazes me how fast a term can breeze by, and this summer was no different. Despite all the wetness this summer brought, I had a great time at my first internship at Aterica Digital Health, where I mostly worked on our Android application. (Shipping Soon<small><sup>TM</sup></small>)
 
-{% include figure.html link="notes/coop1.jpg" alt="Cake day" caption="A typical friday... After the BBQ :)" %}
+{% include figure.html link="blog/coop1.jpg" alt="Cake day" caption="A typical friday... After the BBQ :)" %}
 
 For such a small company (software team of 4 people), we definitely had a lot going on. I learned not only about various technologies and the software development process, but also "life lessons". Here's a few.
 
@@ -18,19 +18,19 @@ However, with that being said, it is still important to keep the team's best int
 
 ### Push through your projects
 
-One of the first mistakes I made at Aterica was taking on a bunch of projects and working on them concurrently. While I spent hours grinding a chunk away from one project and another chunk somewhere else, I really had nothing to show for it. Even worse, on occasions where I ran into roadblocks one project, I simply moved to working on another project. 
+One of the first mistakes I made at Aterica was taking on a bunch of projects and working on them concurrently. While I spent hours grinding a chunk away from one project and another chunk somewhere else, I really had nothing to show for it. Even worse, on occasions where I ran into roadblocks one project, I simply moved to working on another project.
 
 Don't get me wrong, it's definitely important to be able to multitask. But to truly make progress, it's important to drive your projects to completion. Gather the resources you need and break down the roadblocks, and really get your head into a specific project space.
 
 ### It's *NOT* easier to ask for forgiveness than permission
 
-This was something I witnessed first hand. On occasion, developers would ignore / modify a requirement on purpose and hope for the best. Sometimes developers would make changes without code review or discussion with the team. 
+This was something I witnessed first hand. On occasion, developers would ignore / modify a requirement on purpose and hope for the best. Sometimes developers would make changes without code review or discussion with the team.
 
 Every single time their choices came back to bite them.
 
 ### Don't overwork yourself
 
-Compared to the other developers at my work place, one of the things I lacked was experience. Some of these guys have been coding since I was born. As a result, I often felt the need to work as much as I could to make up for it, and I was exhausted. 
+Compared to the other developers at my work place, one of the things I lacked was experience. Some of these guys have been coding since I was born. As a result, I often felt the need to work as much as I could to make up for it, and I was exhausted.
 
 It wasn't until a long weekend came along and I finally got the rest I needed. The next workday, I found myself energized, and thinking clearer and sharper.
 

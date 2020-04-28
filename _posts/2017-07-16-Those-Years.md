@@ -4,7 +4,7 @@ title: Those Years
 date: July 16, 2017
 ---
 
-Those Years (Na Xie Nian) is a coming of age movie based on the real life story of its author and director -- Giddens Ko. At a first glance, this is your classic "boy meets girl" film with your fair share of low cutting humor. However, as we grow up with the main character, Ko Ching-Teng, we begin to see that really, the world isn't as precious as we think it is. 
+Those Years (Na Xie Nian) is a coming of age movie based on the real life story of its author and director -- Giddens Ko. At a first glance, this is your classic "boy meets girl" film with your fair share of low cutting humor. However, as we grow up with the main character, Ko Ching-Teng, we begin to see that really, the world isn't as precious as we think it is.
 
 ### Summary
 
@@ -14,16 +14,16 @@ When Ko Ching-Teng was caught masturbating in class, he was re-seated beside the
 
 When my friends and I decided to watch this movie one Friday night, I definitely did not expect Those Years to become one of my favourite movies. However, it certainly did and this is largely due to the artistic decisions made.
 
-One of the first things you notice about that the cast is that Shen Chia-Yi is perfectly portrayed. While she is cute, she was not breathtakingly attractive. It's not hard to believe that all of Ching-Teng's friend liked her, yet it is also not hard to believe that Ching-Teng did not like her at first either. She can easily be the one girl you had a crush on in high school, yet you were not quite sure why. 
+One of the first things you notice about that the cast is that Shen Chia-Yi is perfectly portrayed. While she is cute, she was not breathtakingly attractive. It's not hard to believe that all of Ching-Teng's friend liked her, yet it is also not hard to believe that Ching-Teng did not like her at first either. She can easily be the one girl you had a crush on in high school, yet you were not quite sure why.
 
-{% include figure.html link="notes/yataome2.jpg" alt="Balloon" caption="\"I always feel that you give me too much credit, I’m not as good as you think…\"" %}
+{% include figure.html link="blog/yataome2.jpg" alt="Balloon" caption="\"I always feel that you give me too much credit, I’m not as good as you think…\"" %}
 
 Something that caught me off guard was the number of sexual innuendos and jokes in the movie. While this type of crude humour may not be enjoyable for everyone, it portrayed different stages of Ko Ching-Teng's maturity in the couple's relationship.
 
-{% include figure.html link="notes/yataome1.jpg" alt="Shook" caption="Shook" %}
+{% include figure.html link="blog/yataome1.jpg" alt="Shook" caption="Shook" %}
 
 After the couple's relation came to an abrupt end, we begin to see Ching-Teng's perspective on the world change. Ching-Teng realized that the world really isn't as precious as we think it is. However, he decided not drown himself in those beliefs. When the situation began looking dark during an Earthquake, Ching-Teng is able to look back at his youth and reflect on the fond memories he had with Chia-Yi.
 
-{% include figure.html link="notes/yataome3.jpg" alt="Earthquake Scene" caption="Earthquake Scene" %}
+{% include figure.html link="blog/yataome3.jpg" alt="Earthquake Scene" caption="Earthquake Scene" %}
 
-It would've been very easy to give this movie a happy ending -- the writers could have reunited Ching-Teng and Chia-Yi and bring back their chemistry. However, that would take away from all the character development Ching-Teng went through. He grasped his identity, freed himself from the past and found the closure he needed to keep moving forward. Those Days definitely lives up to its title as the movie that reminds us of our past, and how we got to where we are. 
+It would've been very easy to give this movie a happy ending -- the writers could have reunited Ching-Teng and Chia-Yi and bring back their chemistry. However, that would take away from all the character development Ching-Teng went through. He grasped his identity, freed himself from the past and found the closure he needed to keep moving forward. Those Days definitely lives up to its title as the movie that reminds us of our past, and how we got to where we are.

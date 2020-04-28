@@ -13,7 +13,7 @@ the perfect companion for the light, refreshing taste of fresh milk. While to
 me, this drink is perfection, I can't help but notice how much I'm being ripped
 off. Any brown sugar latte or their cousin variants are simply made of three
 ingredients: boba, milk, and a shit ton of sweetener. Being charged over $6 per
-drink considering what goes in is ludicrous. 
+drink considering what goes in is ludicrous.
 
 So I decided to try to replicate my favorite drink at home, and through a few
 test runs, I've arrived at a somewhat-doable-with-practice-ish recipe in terms
@@ -28,7 +28,7 @@ For the pearls themselves, we'll be using **tapioca starch**,
 As for serving sizes, using 1 cup of starch will probably be enough for around
 5 cups of boba.
 
-{% include figure.html link="notes/hm_boba1.jpg" alt="boba ingredients" %}
+{% include figure.html link="blog/hm_boba1.jpg" alt="boba ingredients" %}
 
 ### Steps
 
@@ -36,7 +36,7 @@ As for serving sizes, using 1 cup of starch will probably be enough for around
 fully dissolved, mix in the tapioca starch slowly. This is part one of two of
 the hardest part of the recipe.
 
-    {% include figure.html link="notes/hm_boba2.jpg" alt="creating the mixture" %}
+    {% include figure.html link="blog/hm_boba2.jpg" alt="creating the mixture" %}
 
 2. Once the mixture is starting to take place, take it out of the pot
 and begin kneading. The goal here is to make sure the starch is
@@ -44,7 +44,7 @@ evenly distributed and there are no chunks of undissolved starch. This is part
 two of the hardest part, but it is important to be speedy, as once the mixture
 cools down it'll be impossible to mold the mixture into balls.
 
-    {% include figure.html link="notes/hm_boba3.jpg" alt="kneading the mixture" %}
+    {% include figure.html link="blog/hm_boba3.jpg" alt="kneading the mixture" %}
 
 3. Now, we can begin making our tapioca. Pull and roll the mixture into long
 cylinders (like noodles!), and begin cutting them into little pearl shaped
@@ -54,7 +54,7 @@ the 3/4 of the size of regular tapioca if you still want them to go up a straw.
 When collecting the individual pearls, make sure to coat them with a bit more
 tapioca starch to avoid sticking.
 
-    {% include figure.html link="notes/hm_boba4.jpg" alt="molding the pearls" %}
+    {% include figure.html link="blog/hm_boba4.jpg" alt="molding the pearls" %}
 
 4. Finally, we can begin cooking the tapioca. In boiling water, drop in the
 pearls and cook for 25 minutes. At that point, turn off the heat and let rest
@@ -64,11 +64,11 @@ for another 10 minutes.
 saucy and sticky, put them back into a pan/pot and heat them with brown sugar
 or honey.
 
-    {% include figure.html link="notes/hm_boba5.jpg" alt="the ready pearls" %}
+    {% include figure.html link="blog/hm_boba5.jpg" alt="the ready pearls" %}
 
 ### Tada!
 
 With the tapioca ready, simply put them into a cup and serve with fresh milk!
 While this process is lengthy, it's certainly worth the treat!
 
-{% include figure.html link="notes/hm_boba6.jpg" alt="the fresh boba!" %}
+{% include figure.html link="blog/hm_boba6.jpg" alt="the fresh boba!" %}
