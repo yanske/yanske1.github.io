@@ -37,14 +37,22 @@
     \color{bodytext}
 }
 
-\newcommand{\nolocheader} [3] {
+\newcommand{\jobheader} [3] {
     \color{bigtext}\textbf{#1}, {#2}
     \color{weaktext}\hfill{\small\textit{#3}}\\
     \vspace{-2mm} \color{bodytext}
 }
 
-\newcommand{\jobheader} [4] {
-    \nolocheader{#1}{#2}{\small\textit{#3} • \textit{#4}}
+\newcommand{\emptyjob} [4] {
+    \jobheader{#1}{#2}{\small\textit{#3} • \textit{#4}}
+    \vspace{5mm}
+}
+
+\newcommand{\job} [5] {
+    \jobheader{#1}{#2}{\small\textit{#3} • \textit{#4}}
+    \begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+        {#5}
+    \end{itemize}
 }
 
 \newcommand{\iclink} [2] {
@@ -82,44 +90,41 @@
 
 \header{Experience}
 
-\jobheader{Google}{Software Engineering Intern}{Sunnyvale, CA}{Jan 20 - Apr 20}
-\begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+\emptyjob{Stripe}{Software Engineering Intern}{Remote}{May 20 - Aug 20}
+
+\job{Google}{Software (SRE) Engineering Intern}{Sunnyvale, CA}{Jan 20 - Apr 20}{
     \item Developed and promoted workflow tools to share customer metrics between GCP SRE teams
     using Go, with careful consideration for user data privacy and access control
-    \item Designed an \iclink{https://github.com/google/ts-bridge}{open-source shared monitoring tool}
-    using Go to import customer metrics from InfluxDB to Stackdriver, allowing for fault attribution
+    \item Wrote an \iclink{https://github.com/google/ts-bridge}{open-source shared monitoring tool}
+    using Go to aggregate customer metrics from InfluxDB to Stackdriver, allowing for fault attribution
     via SLOs during outages
-\end{itemize}
+}
 
-\jobheader{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}
-\begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+\job{Khan Academy}{Software Engineering Intern}{Mountain View, CA}{May 19 - Aug 19}{
     \item Worked with product and analytics teams to revamp A/B testing metrics based on time spent on site
     using Python, Dataflow, and BigQuery, saving \$12k per month
     \item Developed a Go load testing framework for evaluating performances on App Engine
     \item Designed a server-side GraphQL schema stitcher in Go, increasing performance by 42\%
-\end{itemize}
+}
 
-\jobheader{Scribd}{Software Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}
-\begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+\job{Scribd}{Software Engineering Intern}{San Francisco, CA}{Sept 18 - Dec 18}{
     \item Redesigned data pipeline management platform in Ruby using service discovery architecture,
     improving nightly performance by 23\%
-    \item Reduced runtime of A/B testing by 86\% by migrating Hive queries to Scala Spark
+    \item Reduced runtime of A/B testing pipeline by 86\% by migrating Hive to Scala Spark
     \item Implemented K-means clustering on book cover assets to automate border color selection,
     launched on a concurrent image server using Go and OpenCV
-\end{itemize}
+}
 
-\jobheader{Shopify}{Software Engineering Intern}{Ottawa, ON}{Jan 18 - Apr 18}
-\begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+\job{Shopify}{Software Engineering Intern}{Ottawa, ON}{Jan 18 - Apr 18}{
     \item Enabled merchants to manage inventory and optimize shipping across locations by developing
     multi-location features using Ruby on Rails and JavaScript
     \item Leveraged Redis to reduce inventory database deadlocks on checkout for merchants
-\end{itemize}
+}
 
-\jobheader{Aterica}{Software Engineer Intern}{Waterloo, ON}{May 17 - Aug 17}
-\begin{itemize}[leftmargin=1.8em, rightmargin=0.8em] \itemsep 1pt \color{bodytext}
+\job{Aterica}{Software Engineer Intern}{Waterloo, ON}{May 17 - Aug 17}{
     \item Designed, prototyped and shipped social networking features with parental controls using Android,
     Java backend, Firebase, and SocketIO
-\end{itemize}
+}
 
 \header{Skills}
 
@@ -132,5 +137,5 @@
 \vspace{3mm}
 
 \header{Education}
-\nolocheader{University of Waterloo}{BCS Computer Science (94\% GPA)}{Sept 16 - Apr 21}
+\jobheader{University of Waterloo}{BCS Computer Science (94\% GPA)}{Sept 16 - Apr 21}
 \end{document}

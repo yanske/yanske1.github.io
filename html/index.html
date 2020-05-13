@@ -9,19 +9,19 @@ permalink: index.html
     {% assign current_job = site.data.experience.current %}
     I'm a 4th-year Computer Science student at the <a class="ext" href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>.
     {% if current_job %}
-      Currently I'm interning at <a class="ext" href={{ current_job.link }} target="_blank" rel="noopener">{{ current_job.name }}</a>.
+      Currently I'm a SWE intern at <a class="ext" href={{ current_job.link }} target="_blank" rel="noopener">{{ current_job.name }}</a>.
     {% endif %}
   </p>
   <p>
-    I previously interned as a software engineer 💻 at
+    I previously worked as a software engineer 💻 at
     {% for work in site.data.experience.previous %}
       <a class="ext" href={{ work.link }} target="_blank" rel="noopener">{{ work.name }}</a>,
     {% endfor %}
-    working on backend systems. Check out more of what I've done on my
+    building reliable and performant systems. Check out more of what I've done on my
     <a class="ext" href="{{ site.baseurl }}/assets/resume.pdf" target="_blank">résumé</a>.
   </p>
   <p>
     During my free time, I enjoy catching up on my favourite dramas 📺, playing badminton 🏸,
-    listening to an audiobook 🎧, or enjoying a cup of coffee or tea ☕.
+    and brewing a cup of coffee or tea ☕.
   </p>
 </div>

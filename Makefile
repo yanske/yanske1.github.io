@@ -5,7 +5,7 @@ deps: ## Update dependencies (Gemfile & Webpack & Compress image)
 	optipng assets/img/**/*.png
 
 dev: ## Build local site
-	jekyll s
+	jekyll s --trace
 
 new_post: ## New blog post template. Usage: make new_post title="Post Title"
 	@echo "---\nlayout: post\ntitle: $(title)\ndate: $$(date "+%B %d, %Y")\n\
