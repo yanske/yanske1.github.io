@@ -1,9 +1,10 @@
 current:
-  name: Khan Academy
-  link: https://www.khanacademy.org/
 previous:
   - name: Google
     link: https://www.google.com/
 
   - name: Stripe
     link: https://www.stripe.com/
+
+  - name: Khan Academy
+    link: https://www.khanacademy.org/

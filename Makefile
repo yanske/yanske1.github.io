@@ -1,6 +1,6 @@
 deps: ## Update dependencies (Gemfile & Webpack & Compress image)
 	bundle install
-	cd _webpack && npm install && webpack
+	cd _webpack && npm install && npx webpack
 	jpegoptim assets/img/**/*.jpg
 	optipng assets/img/**/*.png
 

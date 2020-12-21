@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/yanske1/jekyll-tex
+  remote: https://github.com/yanske/jekyll-tex
   revision: 5b15dedb0631931c81108230d9cf21cc94cb2264
   specs:
     jekyll-tex (1.0.1)
